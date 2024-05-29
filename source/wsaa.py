@@ -151,18 +151,24 @@ def verifico_vigencia_del_ticket(xml_file_path):
     root = tree.getroot()
 
     # Find the expirationTime element, le saco la info de la TimeZone
-    expiration_time_str = root.find('.//expirationTime').text[:-6]
+    expiration_time_str = root.find('.//expirationTime').text
 
     # Parse the expiration time string into a datetime object
-    expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S')
-    # expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S.%f%z')
+    # expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S')
+    expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S.%f%z').replace(tzinfo=None)
 
     # Get the current time
-    now = datetime.datetime.now().isoformat()  # Use the same timezone as the expiration time
+    # Get the current time with timezone info
+    now = datetime.datetime.now()
+
+    # Format the datetime object to the desired string format
+    formatted_now = now.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
+
+    # now = datetime.datetime.now().isoformat()  # Use the same timezone as the expiration time
     # now = datetime.datetime.now(expiration_time.tzinfo)  # Use the same timezone as the expiration time
 
     # Compare expiration time with current time
-    if expiration_time < now:
+    if expiration_time > now:
         return True
     else:
         return False
@@ -196,15 +202,12 @@ def main():
     ####################################################
     if os.path.exists(ARCHIVO_TICKET_DE_ACCESO_AFIP):
         if verifico_vigencia_del_ticket(ARCHIVO_TICKET_DE_ACCESO_AFIP):
-            print("Ticket Vigente")
+            print(f"Ticket Vigente en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}: no se requiere regenerarlo")
+            sys.exit(1)
         else:
             print("Ticket Vencido")
 
-
-    # if not os.path.exists(ARCHIVO_TICKET_DE_ACCESO_AFIP):
-    #     print(f"Failed to open {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
-    #     sys.exit(1)
-
+    # en este punto, o no hay archivo con el ticket de acceso o se encuentra vencido
 
     # Verifico si existe el tra.xml del día de hoy, si no existe lo genero
     # para reutilizarlo ya que tiene una duración de un día entre generación y expiración
