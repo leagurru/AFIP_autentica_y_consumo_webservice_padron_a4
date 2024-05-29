@@ -1,11 +1,13 @@
-# Author: Gerardo Fisanotti - DvSHyS/DiOPIN/AFIP - 13-apr-07
+####################################################################
+# Author: Leandro Gurruchaga
+# Date: 2024-05-29
 # Function: Get an authorization ticket (TA) from AFIP WSAA
 # Input:
 #        WSDL, CERT, PRIVATEKEY, PASSPHRASE, SERVICE, URL
 #        Check below for its definitions
 # Output:
 #        TA.xml: the authorization ticket as granted by WSAA.
-#==============================================================================
+####################################################################
 import datetime
 import os
 import sys
@@ -14,14 +16,11 @@ import time
 from lxml import etree
 import xml.etree.ElementTree as ET
 
-from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.serialization import Encoding
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 from cryptography.hazmat.primitives.serialization.pkcs7 import PKCS7Options
 from cryptography.hazmat.primitives.serialization.pkcs7 import PKCS7SignatureBuilder
-from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.x509 import load_pem_x509_certificate
 import base64
 from zeep import Client
@@ -34,11 +33,11 @@ from requests import Session
 # Constantes: definición
 ####################################################################################
 WSDL = "docs/wsaa.wsdl"
-ARCHIVO_CERTIFICADO_X509 = "certificados/certificado_x509.pem"
-ARCHIVO_CERTIFICADO_CLAVEPRIVADA = "certificados/claveprivada.pk"
-PASSPHRASE = None  # Sin passphrase si la clave privada no está encriptada
-PROXY_HOST = "10.1.1.10"
-PROXY_PORT = 51966
+ARCHIVO_CERTIFICADO_X509 = "certificados/certificado_x509.pem"                # a definir en cada caso
+ARCHIVO_CERTIFICADO_CLAVEPRIVADA = "certificados/claveprivada.pk"             # a definir en cada caso
+PASSPHRASE = None  # Sin passphrase si la clave privada no está encriptada    # a definir en cada caso
+PROXY_HOST = "10.1.1.10"                                                      # a definir en cada caso
+PROXY_PORT = 51966                                                            # a definir en cada caso
 URL_TESTING_LOGIN = "https://wsaahomo.afip.gov.ar/ws/services/LoginCms"
 URL_PRODUCCION_LOGIN = "https://wsaa.afip.gov.ar/ws/services/LoginCms"
 SERVICIO = "ws_sr_padron_a4"
