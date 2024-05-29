@@ -74,13 +74,12 @@ def call_wsaa(request):
         # Llamar al método loginCms del servicio
         result = client.service.loginCms(in0=request)
 
-        # Guardar las solicitudes y respuestas SOAP en archivos
-        # with open("request-loginCms.xml", "w") as request_file:
-        #     request_file.write(str(client.transport.last_sent))
-
-        with open("response-loginCms.xml", "w") as response_file:
+        with open(ARCHIVO_TICKET_DE_ACCESO_AFIP, "w") as response_file:
             response_file.write(result)
-            # response_file.write(str(client.transport.last_received))
+
+        # with open("response-loginCms.xml", "w") as response_file:
+        #     response_file.write(result)
+
 
         return result
 
