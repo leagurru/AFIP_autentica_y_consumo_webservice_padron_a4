@@ -9,6 +9,7 @@
 #        TA.xml: the authorization ticket as granted by WSAA.
 ####################################################################
 import datetime
+import json
 import os
 import sys
 import time
@@ -27,6 +28,7 @@ from cryptography.x509 import load_pem_x509_certificate
 from zeep import Client
 from zeep.transports import Transport
 from zeep.exceptions import Fault
+from zeep.helpers import serialize_object
 from requests import Session
 
 
@@ -250,6 +252,7 @@ def main():
     ARCHIVO_TRA = config.get('HOMOLOGACION', 'ARCHIVO_TRA')
     ARCHIVO_TICKET_DE_ACCESO_AFIP = config.get('HOMOLOGACION', 'ARCHIVO_TICKET_DE_ACCESO_AFIP')
     CUIT_REPRESENTADA = config.get('HOMOLOGACION', 'CUIT_REPRESENTADA')
+    ARCHIVO_RESPUESTA_GETPERSONA = config.get('HOMOLOGACION', 'ARCHIVO_RESPUESTA_GETPERSONA')
 
     if not os.path.exists(ARCHIVO_CERTIFICADO_X509):
         print(
@@ -285,7 +288,7 @@ def main():
     # si no fuera así, se regenera
     ####################################################
     if not os.path.exists(ARCHIVO_TICKET_DE_ACCESO_AFIP) or \
-        not verifico_vigencia_del_ticket(ARCHIVO_TICKET_DE_ACCESO_AFIP):
+       not verifico_vigencia_del_ticket(ARCHIVO_TICKET_DE_ACCESO_AFIP):
 
         print("Ticket de acceso a la AFIP Vencido -> se regenera")
 
@@ -307,14 +310,84 @@ def main():
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
     # en este punto ya tenemos el ticket de acceso a la AFIP en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
-    id_persona = "30202020204"
+    # vamos a recorrer los cuits de prueba de la AFIP para generar las respuestas las
+    # id_personas = [
+    #     20002307554,
+    #     20002460123,
+    #     20188192514,
+    #     20221062583,
+    #     20200083394,
+    #     20220707513,
+    #     20221124643,
+    #     20221064233,
+    #     20201731594,
+    #     20201797064
+    # ]
 
-    respuesta = call_ws_sr_padron_a4(id_persona, CUIT_REPRESENTADA, WSDL_PADRON_A4, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
-    if respuesta is None:
-        print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
-    else:
-        print(respuesta)
+    cuites_personas_fisicas = [
+        20002307554,
+        20002460123,
+        20188192514,
+        20221062583,
+        20200083394,
+        20220707513,
+        20221124643,
+        20221064233,
+        20201731594,
+        20201797064
+    ]
 
+    cuiles_personas_fisicas = [
+        20203032723,
+        20168598204,
+        20188153853,
+        20002195624,
+        20002400783,
+        20187850143,
+        20187908303,
+        20187986843,
+        20188027963,
+        20187387443
+    ]
+
+    cuites_personas_juridicas = [
+        30202020204,
+        30558515305,
+        30558521135,
+        30558525025,
+        30558525645,
+        30558529535,
+        30558535365,
+        30558535985,
+        30558539565,
+        30558564675
+    ]
+
+    id_personas = cuites_personas_fisicas + cuiles_personas_fisicas + cuites_personas_juridicas
+
+    for id_persona in id_personas:
+
+        respuesta = call_ws_sr_padron_a4(id_persona, CUIT_REPRESENTADA, WSDL_PADRON_A4, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
+        if respuesta is None:
+            print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
+        else:
+
+            # se genera el archivo con la respuesta del padron_a
+            # conversión de la respuesta a dictionary
+            # la respuesta vuelve con el tipo <class 'zeep.objects.personaReturn'>
+
+            # Convertir el objeto zeep a un diccionario
+            result_dict = serialize_object(respuesta)
+
+            # Convertir el diccionario a una cadena JSON
+            result_json = json.dumps(result_dict, indent=4, default=str)
+
+            archivo_respuesta_id_persona = f"{ARCHIVO_RESPUESTA_GETPERSONA}-cuit={id_persona}.json"
+            # Escribir la cadena JSON a un archivo
+            with open(archivo_respuesta_id_persona, 'w') as file:
+                file.write(result_json)
+
+            print(f"La respuesta de la AFIP del webservice del padron_a4 para el CUIT {id_persona} está en el archivo {archivo_respuesta_id_persona}")
 
 if __name__ == "__main__":
     main()

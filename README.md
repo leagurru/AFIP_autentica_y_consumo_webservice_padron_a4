@@ -20,6 +20,14 @@ Ejemplos open source de clientes del WSAA (PHP, Java, .NET, PowerShell
 Catálogo de web services:
 https://www.afip.gob.ar/ws/documentacion/catalogo.asp
 
+AFIP: Consulta al padrón de contribuyentes
+Manual del desarrollador
+id del servicio: ws_sr_padron_a4
+https://www.afip.gob.ar/ws/ws_sr_padron_a4/manual_ws_sr_padron_a4_v1.3.pdf
+
+
+Lista de CUITs publicados por AFIP para pruebas: 
+http://www.afip.gob.ar/ws/ws_sr_padron_a4/datos-prueba-padron-a4.txt
 
 
 CÓMO GENERAR UNA SOLICITUD DE CERTIFICADO (CSR):
