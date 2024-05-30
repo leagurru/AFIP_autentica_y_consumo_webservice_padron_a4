@@ -208,13 +208,11 @@ def main():
 
         request = base64.b64encode(cms_signed_data).decode()
 
-        call_wsaa(request)
+        call_wsaa(request, WSDL, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
     else:
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
-
-    # en este punto ya tenemos el ticket de acceso a la afip
-    # en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
+    # en este punto ya tenemos el ticket de acceso a la AFIP en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
 
 
 if __name__ == "__main__":
