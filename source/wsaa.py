@@ -1,13 +1,12 @@
-####################################################################
+######################################################################################
 # Author: Leandro Gurruchaga
 # Date: 2024-05-29
-# Function: Get an authorization ticket (TA) from AFIP WSAA
-# Input:
-#        WSDL, CERT, PRIVATEKEY, PASSPHRASE, SERVICE, URL
-#        Check below for its definitions
-# Output:
-#        TA.xml: the authorization ticket as granted by WSAA.
-####################################################################
+# Function: Obtener o generar un ticket de autorización de la AFIP WSAA
+#           para el consumo del web service ws_sr_padron_a4
+# Function: Consulta del padrón de contribuyentes web service ws_sr_padron_a4
+# Input: config.ini.dev personalizado
+# Output: aArchivo con la respuesta de la AFIP para un cuit-cuil determinado
+######################################################################################
 import datetime
 import json
 import os
@@ -34,6 +33,7 @@ from requests import Session
 
 def call_wsaa(request, wsdl, proxy_host, proxy_port, archivo_ticket_de_acceso_afip):
 
+    # Si el usuario definió un proxy en el config.ini se configura
     # Configurar el proxy
     session = Session()
     session.proxies = {
@@ -60,6 +60,9 @@ def call_wsaa(request, wsdl, proxy_host, proxy_port, archivo_ticket_de_acceso_af
 
 
 def crear_tra(servicio, hoy, tra):
+    """
+    Creación de un archivo xml con el tra: ticket de requisitoria de acceso a AFIP
+    """
 
     hoy_iso = (hoy - datetime.timedelta(seconds=60)).isoformat()
     maniana = hoy + + datetime.timedelta(days=1)
@@ -78,11 +81,17 @@ def crear_tra(servicio, hoy, tra):
 
 
 def create_embeded_pkcs7_signature(tra: str, cert: bytes, key: bytes) -> bytes:
-    """Creates an embedded ("nodetached") PKCS7 signature.
+    """
+    Creación de una firma PKCS7 embebida ("nodetached")
 
-    This is equivalent to the output of::
+    Es el equivalente del comando de terminal:
 
         openssl smime -sign -signer cert -inkey key -outform DER -nodetach < data
+
+    :param tra:  archivo de Ticket Request Access. Path: {ARCHIVO_TRA}
+    :param cert: archivo con el Certificado X509.  Path: {ARCHIVO_CERTIFICADO_X509}
+    :param key:  archivo con la Clave Privada.     Path: {ARCHIVO_CERTIFICADO_CLAVEPRIVADA}
+    :return: tipo bytes
     """
 
     with open(tra, "r") as xml_login_file:
@@ -112,8 +121,13 @@ def create_embeded_pkcs7_signature(tra: str, cert: bytes, key: bytes) -> bytes:
     )
 
 
-# Function to parse the XML and check expiration time
 def verifico_vigencia_del_ticket(xml_file_path):
+    """
+    Verificación de la vigencia del ticket de acceso a la AFIP
+    :param xml_file_path: {ARCHIVO_TICKET_DE_ACCESO_AFIP}
+    :return: boolean
+    """
+
     # Parse the XML file
     tree = ET.parse(xml_file_path)
     root = tree.getroot()
@@ -135,6 +149,13 @@ def verifico_vigencia_del_ticket(xml_file_path):
 
 
 def obtener_token_sign(xml_file_path):
+    """
+    Se obtiene el token y el sign del archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
+
+    :param xml_file_path: {ARCHIVO_TICKET_DE_ACCESO_AFIP}
+    :return: token, sign
+    """
+
     # Parse the XML file
     tree = ET.parse(xml_file_path)
     root = tree.getroot()
@@ -148,45 +169,45 @@ def obtener_token_sign(xml_file_path):
     return token_str, sign_str
 
 
-def crear_soap_envelope(
-        id_persona,
-        cuit_representada,
-        archivo_ticket_de_acceso_afip
-):
-
-    # obtengo token y sign del archivo_ticket_de_acceso_afip
-    token, sign = obtener_token_sign(archivo_ticket_de_acceso_afip)
-
-    # Crear el elemento raíz con los nombres de espacio
-    envelope = ET.Element('soapenv:Envelope', attrib={
-        'xmlns:soapenv': 'http://schemas.xmlsoap.org/soap/envelope/',
-        'xmlns:a4': 'http://a4.soap.ws.server.puc.sr/'
-    })
-
-    # Crear los elementos Header y Body
-    header = ET.SubElement(envelope, 'soapenv:Header')
-    body = ET.SubElement(envelope, 'soapenv:Body')
-
-    # Crear el elemento getPersona dentro del Body
-    get_persona = ET.SubElement(body, 'a4:getPersona')
-
-    # Añadir los elementos token, sign, cuitRepresentada e idPersona
-    token_element = ET.SubElement(get_persona, 'token')
-    token_element.text = token
-
-    sign_element = ET.SubElement(get_persona, 'sign')
-    sign_element.text = sign
-
-    cuit_representada_element = ET.SubElement(get_persona, 'cuitRepresentada')
-    cuit_representada_element.text = cuit_representada
-
-    id_persona_element = ET.SubElement(get_persona, 'idPersona')
-    id_persona_element.text = id_persona
-
-    # Convertir el árbol XML a una cadena
-    xml_str = ET.tostring(envelope, encoding='unicode', method='xml')
-
-    return xml_str
+# def crear_soap_envelope(
+#         id_persona,
+#         cuit_representada,
+#         archivo_ticket_de_acceso_afip
+# ):
+#
+#     # obtengo token y sign del archivo_ticket_de_acceso_afip
+#     token, sign = obtener_token_sign(archivo_ticket_de_acceso_afip)
+#
+#     # Crear el elemento raíz con los nombres de espacio
+#     envelope = ET.Element('soapenv:Envelope', attrib={
+#         'xmlns:soapenv': 'http://schemas.xmlsoap.org/soap/envelope/',
+#         'xmlns:a4': 'http://a4.soap.ws.server.puc.sr/'
+#     })
+#
+#     # Crear los elementos Header y Body
+#     header = ET.SubElement(envelope, 'soapenv:Header')
+#     body = ET.SubElement(envelope, 'soapenv:Body')
+#
+#     # Crear el elemento getPersona dentro del Body
+#     get_persona = ET.SubElement(body, 'a4:getPersona')
+#
+#     # Añadir los elementos token, sign, cuitRepresentada e idPersona
+#     token_element = ET.SubElement(get_persona, 'token')
+#     token_element.text = token
+#
+#     sign_element = ET.SubElement(get_persona, 'sign')
+#     sign_element.text = sign
+#
+#     cuit_representada_element = ET.SubElement(get_persona, 'cuitRepresentada')
+#     cuit_representada_element.text = cuit_representada
+#
+#     id_persona_element = ET.SubElement(get_persona, 'idPersona')
+#     id_persona_element.text = id_persona
+#
+#     # Convertir el árbol XML a una cadena
+#     xml_str = ET.tostring(envelope, encoding='unicode', method='xml')
+#
+#     return xml_str
 
 
 def call_ws_sr_padron_a4(
@@ -197,6 +218,18 @@ def call_ws_sr_padron_a4(
         proxy_port,
         archivo_ticket_de_acceso_afip
 ):
+
+    """
+    Consulta al padrón de contribuyentes de AFIP
+
+    :param id_persona: cuit/cuil de la persona a consultar
+    :param cuit_representada: cuit representado, en este caso de homologación el cuil del desarrollador que obtuvo el certificado
+    :param wsdl_padron_a4: url para la consulta {WSDL_PADRON_A4}
+    :param proxy_host: proxy host proveniente del config.ini
+    :param proxy_port: proxy port proveniente del config.ini
+    :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
+    :return:
+    """
 
     # Configurar el proxy
     session = Session()
@@ -232,6 +265,7 @@ def call_ws_sr_padron_a4(
 
 
 def main():
+
     ####################################################################################
     # Constantes: definición. Se obtienen del config.ini
     ####################################################################################
@@ -279,12 +313,6 @@ def main():
         )
         sys.exit(1)
 
-    # if len(sys.argv) < 2:
-    #     show_usage(sys.argv[0])
-    #     sys.exit(1)
-
-    # service = sys.argv[1]
-
     ####################################################
     # Verifico si tengo un ticket de acceso vigente
     ####################################################
@@ -313,20 +341,9 @@ def main():
     else:
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
-    # en este punto ya tenemos el ticket de acceso a la AFIP en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
-    # vamos a recorrer los cuits de prueba de la AFIP para generar las respuestas las
-    # id_personas = [
-    #     20002307554,
-    #     20002460123,
-    #     20188192514,
-    #     20221062583,
-    #     20200083394,
-    #     20220707513,
-    #     20221124643,
-    #     20221064233,
-    #     20201731594,
-    #     20201797064
-    # ]
+    # En este punto ya tenemos el ticket de acceso a la AFIP en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP.
+    # Vamos a recorrer los cuits/cuils de prueba de la AFIP para generar las respuestas a la consulta al
+    # padrón de contribuyentes de la AFIP
 
     cuites_personas_fisicas = [
         20002307554,
@@ -380,12 +397,7 @@ def main():
             ARCHIVO_TICKET_DE_ACCESO_AFIP
         )
 
-        if respuesta is None:
-            pass
-            # print(f"---------------------------------------------------------------------------")
-            # print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
-            # print(f"---------------------------------------------------------------------------")
-        else:
+        if respuesta is not None:
 
             # se genera el archivo con la respuesta del padron_a
             # conversión de la respuesta a dictionary
