@@ -1,0 +1,108 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.935000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "EXTRACCI\u00d3N DE MINERALES PARA LA FABRICACI\u00d3N DE ABONOS EXCEPTO TURBA",
+                "idActividad": 89110,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201412
+            }
+        ],
+        "apellido": "TERESA FOREST",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "4600",
+                "datoAdicional": null,
+                "descripcionProvincia": "JUJUY",
+                "direccion": "0 5",
+                "idProvincia": 6,
+                "localidad": "SAN SALVADOR DE JUJUY",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "4600",
+                "datoAdicional": null,
+                "descripcionProvincia": "JUJUY",
+                "direccion": "0 5",
+                "idProvincia": 6,
+                "localidad": "SAN SALVADOR DE JUJUY",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:47 Dpto:2",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2002-04-29 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1977-01-13 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20187850143,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201412
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": null,
+        "numeroDocumento": "18785014",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 14343093,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "PARTICULAR"
+            },
+            {
+                "numero": 387493171,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "DEL ASESOR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:27.285000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "ENSE\u00d1ANZA SECUNDARIA DE FORMACI\u00d3N GENERAL",
+                "idActividad": 852100,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201311
+            },
+            {
+                "descripcionActividad": "SERVICIOS DE CONTRATISTAS DE MANO DE OBRA AGR\u00cdCOLA",
+                "idActividad": 16130,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 202106
+            },
+            {
+                "descripcionActividad": "VENTA AL POR MENOR DE CARNES ROJAS, MENUDENCIAS Y CHACINADOS FRESCOS",
+                "idActividad": 472130,
+                "nomenclador": 883,
+                "orden": 5,
+                "periodo": 201502
+            }
+        ],
+        "apellido": "GRS\u00dcPEEK",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "G LOCACIONES DE SERVICIO",
+                "estado": "ACTIVO",
+                "idCategoria": 41,
+                "idImpuesto": 20,
+                "periodo": 202404
+            },
+            {
+                "descripcionCategoria": "G LOCACIONES DE SERVICIO - ACTIVO",
+                "estado": "ACTIVO",
+                "idCategoria": 21,
+                "idImpuesto": 21,
+                "periodo": 202404
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "5800",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "MIGUELETES 401 Piso:2 Dpto:8",
+                "idProvincia": 3,
+                "localidad": "RIO CUARTO",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:2 Dpto:8",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1870",
+                "datoAdicional": "TEST",
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "TRES 4",
+                "idProvincia": 1,
+                "localidad": "PI\u00d1EYRO",
+                "orden": 1,
+                "tipoDatoAdicional": "BARRIO",
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1642",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "FRANCIA 1442",
+                "idProvincia": 1,
+                "localidad": "SAN ISIDRO",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2000230755415@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "PERSONAL INTERNET"
+            },
+            {
+                "direccion": "e2000230755421@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1994-05-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1928-12-12 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20002307554,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA EXENTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2017-11-02 12:08:18-03:00",
+                "idImpuesto": 32,
+                "periodo": 201710
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 28,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2011-07-19 12:42:54-03:00",
+                "idImpuesto": 25,
+                "periodo": 201702
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 28,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2015-12-01 12:19:38-03:00",
+                "idImpuesto": 30,
+                "periodo": 201702
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-08-03 12:27:33-03:00",
+                "idImpuesto": 301,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "CEDULARES- VALORES O DEPOSITOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2022-03-18 12:34:37-03:00",
+                "idImpuesto": 1025,
+                "periodo": 202001
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2015-12-01 12:19:38-03:00",
+                "idImpuesto": 11,
+                "periodo": 202112
+            },
+            {
+                "descripcionImpuesto": "INTERNOS-CERVEZAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-09-21 12:54:14-03:00",
+                "idImpuesto": 451,
+                "periodo": 202001
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 15,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2007-01-01 12:00:00-03:00",
+                "idImpuesto": 103,
+                "periodo": 200701
+            },
+            {
+                "descripcionImpuesto": "REG. SIMPLIFICADO IIBB CORDOBA",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2024-03-25 12:23:11-03:00",
+                "idImpuesto": 5243,
+                "periodo": 202403
+            },
+            {
+                "descripcionImpuesto": "CONTRIBUCION MUNICIPAL CORDOBA",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2024-03-25 12:23:11-03:00",
+                "idImpuesto": 5244,
+                "periodo": 202403
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2022-01-07 12:16:51-03:00",
+                "idImpuesto": 21,
+                "periodo": 202403
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2022-01-07 12:16:51-03:00",
+                "idImpuesto": 20,
+                "periodo": 202403
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 5,
+        "nombre": "POPPUUPE RUKGROK",
+        "numeroDocumento": "230755",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "EEE  S.G.S.",
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 53635422,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 77789996,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 88595264,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "LE",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

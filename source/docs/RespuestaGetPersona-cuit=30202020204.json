@@ -1,0 +1,178 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:30.823000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "CULTIVO DE ARROZ",
+                "idActividad": 11111,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 202007
+            },
+            {
+                "descripcionActividad": "VENTA AL POR MAYOR DE COMBUSTIBLES Y LUBRICANTES PARA AUTOMOTORES",
+                "idActividad": 466110,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 201901
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": null,
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 93,
+                "idImpuesto": 20,
+                "periodo": 201805
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1826",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "DEHEZA 3245",
+                "idProvincia": 1,
+                "localidad": "REMEDIOS DE ESCALADA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1826",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "DEHEZA 3245",
+                "idProvincia": 1,
+                "localidad": "REMEDIOS DE ESCALADA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3020202020411@afip.gob.ar",
+                "estado": "No Confirmado por Aplicacion",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "2014-02-19 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1991-08-23 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "COOPERATIVA EFECTORA",
+        "idPersona": 30202020204,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "BP-ACCIONES O PARTICIPACIONES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-03-19 12:04:41-03:00",
+                "idImpuesto": 211,
+                "periodo": 201912
+            },
+            {
+                "descripcionImpuesto": "INTERNOS-SEGUROS ",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-03-19 12:19:07-03:00",
+                "idImpuesto": 365,
+                "periodo": 201903
+            },
+            {
+                "descripcionImpuesto": "INTERNOS-FRACCION.ALCOHOL ETIL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-03-19 12:19:07-03:00",
+                "idImpuesto": 420,
+                "periodo": 201903
+            },
+            {
+                "descripcionImpuesto": "INTERNOS- TABACOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-03-19 12:19:07-03:00",
+                "idImpuesto": 361,
+                "periodo": 201903
+            },
+            {
+                "descripcionImpuesto": "INTERNOS-BEB.ANALCOHOL JARAB ",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-03-19 12:19:07-03:00",
+                "idImpuesto": 485,
+                "periodo": 201903
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2008-01-01 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 200801
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2008-01-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 200801
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 10,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "RT OGIRKEE",
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2015-06-05 12:00:00-03:00",
+                "ffVencimiento": "2020-12-13 12:00:00-03:00",
+                "idPersona": 30202020204,
+                "idPersonaAsociada": 20002460123,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2010-09-28 12:05:41-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30202020204,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 33078932,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

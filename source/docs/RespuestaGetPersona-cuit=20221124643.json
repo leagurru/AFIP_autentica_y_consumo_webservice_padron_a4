@@ -1,0 +1,182 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:28.352000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "CULTIVO DE CEREALES N.C.P., EXCEPTO LOS DE USO FORRAJERO",
+                "idActividad": 11119,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 202101
+            }
+        ],
+        "apellido": "ARG\u00dcELLO",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "B VENTAS DE COSAS MUEBLES",
+                "estado": "ACTIVO",
+                "idCategoria": 44,
+                "idImpuesto": 20,
+                "periodo": 202402
+            },
+            {
+                "descripcionCategoria": "B VENTAS DE COSAS MUEBLES - ACTIVO",
+                "estado": "ACTIVO",
+                "idCategoria": 24,
+                "idImpuesto": 21,
+                "periodo": 202402
+            }
+        ],
+        "claveInactivaAsociada": [
+            27001075824
+        ],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3334",
+                "datoAdicional": null,
+                "descripcionProvincia": "TUCUMAN",
+                "direccion": "CIUDADELA 789",
+                "idProvincia": 14,
+                "localidad": "CATAMARCA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3334",
+                "datoAdicional": null,
+                "descripcionProvincia": "TUCUMAN",
+                "direccion": "CIUDADELA 789",
+                "idProvincia": 14,
+                "localidad": "CATAMARCA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:17 Dpto:4",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1870",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "T$#$#%/&ESTES 22",
+                "idProvincia": 1,
+                "localidad": "PI\u00d1EYRO",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2022112464321@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1997-04-01 12:00:00-03:00",
+        "fechaJubilado": "2016-06-06 12:00:00-03:00",
+        "fechaNacimiento": "1971-04-05 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20221124643,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-05-09 12:51:34-03:00",
+                "idImpuesto": 20,
+                "periodo": 201106
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-05-09 12:51:34-03:00",
+                "idImpuesto": 21,
+                "periodo": 201106
+            },
+            {
+                "descripcionImpuesto": "APORTES SEG.SOCIAL AUTONOMOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2013-03-12 12:15:59-03:00",
+                "idImpuesto": 308,
+                "periodo": 201201
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-08-03 12:27:33-03:00",
+                "idImpuesto": 11,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2015-02-20 12:36:48-03:00",
+                "idImpuesto": 103,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "TRANSFERENCIA DE INFORMACI\u00d3N",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-08-03 12:27:33-03:00",
+                "idImpuesto": 242,
+                "periodo": 201105
+            }
+        ],
+        "leyJubilacion": 24241,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "ALFREDO OSCAR",
+        "numeroDocumento": "22112464",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 12345678,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            },
+            {
+                "numero": 94838170,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": "TEMPORARIA"
+    }
+}

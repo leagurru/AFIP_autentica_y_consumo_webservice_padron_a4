@@ -1,0 +1,217 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:27.817000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE ASESORAMIENTO, DIRECCI\u00d3N Y GESTI\u00d3N EMPRESARIAL REALIZADOS POR INTEGRANTES DE LOS \u00d3RGANOS DE ADMINISTRACI\u00d3N Y/O FISCALIZACI\u00d3N EN SOCIEDADES AN\u00d3NIMAS",
+                "idActividad": 702091,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201312
+            }
+        ],
+        "apellido": "SUSUS",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "A MONOTRIBUTO SOCIAL VENTAS",
+                "estado": "ACTIVO",
+                "idCategoria": 100,
+                "idImpuesto": 20,
+                "periodo": 202211
+            },
+            {
+                "descripcionCategoria": "NO APORTANTE AL REGIMEN",
+                "estado": "ACTIVO",
+                "idCategoria": 11,
+                "idImpuesto": 21,
+                "periodo": 202211
+            },
+            {
+                "descripcionCategoria": null,
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 401,
+                "idImpuesto": 308,
+                "periodo": 202108
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3230",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORRIENTES",
+                "direccion": "YATAY 2059",
+                "idProvincia": 4,
+                "localidad": "PASO DE LOS LIBRES",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3230",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORRIENTES",
+                "direccion": "YATAY 2059",
+                "idProvincia": 4,
+                "localidad": "PASO DE LOS LIBRES",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 1234 Piso:10 Dpto:A",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2022106258311@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-08-14 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1971-10-19 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20221062583,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-07-06 12:07:06-03:00",
+                "idImpuesto": 11,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "APORTES SEG.SOCIAL AUTONOMOS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2014-05-14 12:03:31-03:00",
+                "idImpuesto": 308,
+                "periodo": 202108
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2014-01-30 12:00:00-03:00",
+                "idImpuesto": 103,
+                "periodo": 201410
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-01-05 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 200801
+            },
+            {
+                "descripcionImpuesto": "CONTRIBUCIONES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-01-05 12:00:00-03:00",
+                "idImpuesto": 351,
+                "periodo": 200801
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2011-07-06 12:07:06-03:00",
+                "idImpuesto": 30,
+                "periodo": 202210
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2022-10-31 12:08:34-03:00",
+                "idImpuesto": 20,
+                "periodo": 202211
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2022-10-31 12:08:34-03:00",
+                "idImpuesto": 21,
+                "periodo": 202211
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "PVPR SPRSUK SGIRUPE",
+        "numeroDocumento": "22106258",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "EEE S. G. S.",
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 17823100,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 399251950788368,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 515409884200593,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 249308927668023,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 133688619515588,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 591762984408481,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 317421629556156,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

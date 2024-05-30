@@ -1,0 +1,176 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.608000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE RECEPCI\u00d3N DE APUESTAS DE QUINIELA, LOTER\u00cdA Y SIMILARES",
+                "idActividad": 920001,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201410
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "5501",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "INDEPENDENCIA 751",
+                "idProvincia": 7,
+                "localidad": "GODOY CRUZ",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "5501",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "INDEPENDENCIA 751",
+                "idProvincia": 7,
+                "localidad": "GODOY CRUZ",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "5501",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "SAN MARTIN 1",
+                "idProvincia": 7,
+                "localidad": "GODOY CRUZ",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "5501",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "BELGRANO 2",
+                "idProvincia": 7,
+                "localidad": "GODOY CRUZ",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "5501",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "SARMIENTO 3",
+                "idProvincia": 7,
+                "localidad": "GODOY CRUZ",
+                "orden": 3,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1976-01-15 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1901-01-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "S.R.L.",
+        "idPersona": 30558525645,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 28,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1975-05-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 200502
+            },
+            {
+                "descripcionImpuesto": "ACTIVOS SOCIEDADES L.23905",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1984-10-01 12:00:00-03:00",
+                "idImpuesto": 186,
+                "periodo": 199506
+            },
+            {
+                "descripcionImpuesto": "BP-ACCIONES O PARTICIPACIONES",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2003-05-23 12:00:00-03:00",
+                "idImpuesto": 211,
+                "periodo": 201003
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2009-08-10 12:00:00-03:00",
+                "idImpuesto": 103,
+                "periodo": 201504
+            },
+            {
+                "descripcionImpuesto": "ESPECIFICO DE APUESTAS",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-01-28 12:00:00-03:00",
+                "idImpuesto": 440,
+                "periodo": 201601
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1976-06-01 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 201409
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1990-02-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201409
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 3,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 0.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "EL CASAMIENTO DE GIAN CARLO",
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2012-05-30 12:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525645,
+                "idPersonaAsociada": 27233294220,
+                "subtipoRelacion": "GERENTE TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            }
+        ],
+        "sexo": null,
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

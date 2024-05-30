@@ -1,0 +1,375 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.389000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "ELABORACI\u00d3N DE YERBA MATE",
+                "idActividad": 107930,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201311
+            },
+            {
+                "descripcionActividad": "PESCA Y ELABORACI\u00d3N DE PRODUCTOS MARINOS REALIZADA A BORDO DE BUQUES PROCESADORES",
+                "idActividad": 31120,
+                "nomenclador": 883,
+                "orden": 3,
+                "periodo": 201901
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3342",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORRIENTES",
+                "direccion": "RUTA NAC 14 KM 749.50 0",
+                "idProvincia": 4,
+                "localidad": "GOB. ING. V. VIRASORO",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3342",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORRIENTES",
+                "direccion": "RUTA NAC 14 KM 749.50 0",
+                "idProvincia": 4,
+                "localidad": "GOB. ING. V. VIRASORO",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3055852502511@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "COMERCIAL"
+            },
+            {
+                "direccion": "e3055852502528@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "E-VENTANILLA"
+            },
+            {
+                "direccion": "e3055852502533@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "TRIBUTARIO"
+            },
+            {
+                "direccion": "e3055852502546@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "CONTACTO ADUANERO"
+            },
+            {
+                "direccion": "e3055852502552@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": "1970-09-29 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1989-01-17 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO",
+        "idPersona": 30558525025,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "ACTIVOS SOCIEDADES L.23905",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1989-01-01 12:00:00-03:00",
+                "idImpuesto": 186,
+                "periodo": 199506
+            },
+            {
+                "descripcionImpuesto": "SICORE-IMPTO.A LAS GANANCIAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2001-06-07 12:00:00-03:00",
+                "idImpuesto": 217,
+                "periodo": 200001
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1976-01-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 197601
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1989-01-01 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 201301
+            },
+            {
+                "descripcionImpuesto": "BP-ACCIONES O PARTICIPACIONES",
+                "diaPeriodo": 5,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2003-05-23 12:00:00-03:00",
+                "idImpuesto": 211,
+                "periodo": 200305
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2009-08-10 12:00:00-03:00",
+                "idImpuesto": 103,
+                "periodo": 200701
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1990-12-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 202103
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2002-09-26 12:00:00-03:00",
+                "idImpuesto": 25,
+                "periodo": 201812
+            },
+            {
+                "descripcionImpuesto": "ALCOHOLES-COM.ALCOHOL ETILICO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:53:39-03:00",
+                "idImpuesto": 432,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "ADICIONAL EMERG.CIGARRILLOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:53:39-03:00",
+                "idImpuesto": 366,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "COM LIQ L.23966/24699 ART 2DOA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:53:39-03:00",
+                "idImpuesto": 377,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "ENTRADAS ESPEC.CINEMATOGRAFICO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:53:39-03:00",
+                "idImpuesto": 304,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "IMP S/DEB Y CRED EN CTA CTE",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:54:27-03:00",
+                "idImpuesto": 149,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "IVA CONSIGNATARIOS DE CARNE",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:54:27-03:00",
+                "idImpuesto": 265,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "IVA ESTAB FAENADOR PORCINO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-06 12:54:27-03:00",
+                "idImpuesto": 267,
+                "periodo": 201211
+            },
+            {
+                "descripcionImpuesto": "IIBB CONVENIO MULTILATERAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1996-04-01 12:00:00-03:00",
+                "idImpuesto": 5900,
+                "periodo": 199604
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 10,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": "156",
+        "organismoInscripcion": "RPC",
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": "CORRIENTES",
+        "razonSocial": "THE, TORNADO, MIQUEL,OTROS",
+        "regimen": [
+            {
+                "descripcionRegimen": "DEBITOS Y CR\u00c9DITOS-COMPRA LETES BCRA",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 373,
+                "periodo": 201211,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "D\u00c9BITOS Y CR\u00c9DITOS-CR\u00c9DITOS CANCELACION DE LETRAS DEL BCRA",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 374,
+                "periodo": 201211,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "D\u00c9BITOS Y CR\u00c9DITOS-CREDITOS EN CTA CTE ",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 376,
+                "periodo": 201211,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "CREDITOS EN CUENTA BANCARIA. MONOTRIBUTO. LEY 24977 CATEG. 4 A 7  DEL ART.6\u00b0",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 390,
+                "periodo": 201211,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "ENAJENACION DE BIENES MUEBLES Y BIENES DE CAMBIO",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 217,
+                "idRegimen": 78,
+                "periodo": 200001,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "HONORARIOS DE DIRECTOR DE S.A., FIDUCIARIO, INTEGRANTE DE CONSEJOS DE VIGILANCIA, Y SOCIOS ADMINISTRADORES DE S.R.L., EN COMANDITA SIMPLE Y POR ACCIONES,\nALBACEA, SINDICO, MANDATARIO, GESTOR DE NEGOCIO.",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 217,
+                "idRegimen": 116,
+                "periodo": 200001,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 265,
+                "idRegimen": 673,
+                "periodo": 201211,
+                "tipoRegimen": null
+            },
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 267,
+                "idRegimen": 674,
+                "periodo": 201211,
+                "tipoRegimen": null
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2000-05-21 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 20115762193,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "1996-05-03 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 20129389282,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "1996-05-03 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 20134074079,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2010-09-28 12:05:41-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            },
+            {
+                "ffRelacion": "1996-05-03 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 20933367011,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "1986-08-26 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 27009867339,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2021-10-14 16:52:30-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558525025,
+                "idPersonaAsociada": 27312084002,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 756586,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

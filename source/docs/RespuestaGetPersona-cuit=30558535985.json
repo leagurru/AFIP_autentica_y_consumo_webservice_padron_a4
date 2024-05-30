@@ -1,0 +1,192 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:32.117000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS INMOBILIARIOS REALIZADOS A CAMBIO DE UNA RETRIBUCION O POR CONTRATA",
+                "idActividad": 702000,
+                "nomenclador": 150,
+                "orden": 1,
+                "periodo": 199903
+            },
+            {
+                "descripcionActividad": "HINCADO DE PILOTES, CIMENTACI\u00d3N Y OTROS TRABAJOS DE HORMIG\u00d3N ARMADO",
+                "idActividad": 439910,
+                "nomenclador": 883,
+                "orden": 3,
+                "periodo": 201311
+            },
+            {
+                "descripcionActividad": "SERVICIOS DE PREPARACI\u00d3N DE COMIDAS PARA EMPRESAS Y EVENTOS",
+                "idActividad": 562010,
+                "nomenclador": 883,
+                "orden": 5,
+                "periodo": 201311
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "LIBERTADOR DEL AV. 5092",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "AVDA DEL LIBERTADOR 5092",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1972-12-01 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1992-02-19 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "CONS. PROPIET.",
+        "idPersona": 30558535985,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1972-10-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 197210
+            },
+            {
+                "descripcionImpuesto": "SICORE - RETENCIONES Y PERCEPC",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1992-02-01 12:00:00-03:00",
+                "idImpuesto": 767,
+                "periodo": 199612
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2012-11-07 12:27:40-03:00",
+                "idImpuesto": 25,
+                "periodo": 201906
+            },
+            {
+                "descripcionImpuesto": "COMB LIQ L 23966 NAFTAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-07 12:27:40-03:00",
+                "idImpuesto": 181,
+                "periodo": 201212
+            },
+            {
+                "descripcionImpuesto": "IMP S/DEB Y CRED EN CTA CTE",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2012-11-07 12:27:40-03:00",
+                "idImpuesto": 149,
+                "periodo": 201212
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 6,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "LA DAMA MARIA ALEJANDRA",
+        "regimen": [
+            {
+                "descripcionRegimen": "DEBITOS Y CR\u00c9DITOS-COMPRA LETES BCRA",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 373,
+                "periodo": 201212,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "D\u00c9BITOS Y CR\u00c9DITOS-CR\u00c9DITOS CANCELACION DE LETRAS DEL BCRA",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 374,
+                "periodo": 201212,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "D\u00c9BITOS Y CR\u00c9DITOS-DEBITOS EN CTA CTE ",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 149,
+                "idRegimen": 375,
+                "periodo": 201212,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 767,
+                "idRegimen": 523,
+                "periodo": 199612,
+                "tipoRegimen": null
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2012-03-30 12:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558535985,
+                "idPersonaAsociada": 20210021184,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2008-03-25 11:42:09-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558535985,
+                "idPersonaAsociada": 20223625399,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 16679768,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

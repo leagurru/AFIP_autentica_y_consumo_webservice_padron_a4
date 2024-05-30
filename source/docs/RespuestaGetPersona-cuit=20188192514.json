@@ -1,0 +1,197 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:27.662000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "CULTIVO DE MANZANA Y PERA",
+                "idActividad": 12311,
+                "nomenclador": 1807,
+                "orden": 1,
+                "periodo": 201311
+            },
+            {
+                "descripcionActividad": "FABRICACI\u00d3N  DE EQUIPO EL\u00c9CTRICO N.C.P.",
+                "idActividad": 279000,
+                "nomenclador": 1807,
+                "orden": 1,
+                "periodo": 201311
+            }
+        ],
+        "apellido": "RAZONAR",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "A EXENTO LOCACIONES SERVICIOS",
+                "estado": "ACTIVO",
+                "idCategoria": 148,
+                "idImpuesto": 20,
+                "periodo": 202201
+            },
+            {
+                "descripcionCategoria": null,
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 104,
+                "idImpuesto": 308,
+                "periodo": 201712
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "4500",
+                "datoAdicional": null,
+                "descripcionProvincia": "JUJUY",
+                "direccion": "SAN MARTIN 8 Piso:\u00b0",
+                "idProvincia": 6,
+                "localidad": "ALTO DE LA LOMA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "2340",
+                "datoAdicional": null,
+                "descripcionProvincia": "SANTA FE",
+                "direccion": "ZONA RURAL 2   S:|",
+                "idProvincia": 12,
+                "localidad": "CERES",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:91 Dpto:8",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2018819251412@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "PERSONAL"
+            },
+            {
+                "direccion": "e2018819251422@afip.gob.ar",
+                "estado": "No Confirmado por Aplicacion",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2002-04-30 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1958-09-05 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "PROYECTOS PRODUCTIVOS",
+        "idPersona": 20188192514,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2011-08-03 12:27:33-03:00",
+                "idImpuesto": 25,
+                "periodo": 201812
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-03-06 12:39:59-03:00",
+                "idImpuesto": 11,
+                "periodo": 202307
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-03-06 12:39:59-03:00",
+                "idImpuesto": 30,
+                "periodo": 200606
+            },
+            {
+                "descripcionImpuesto": "APORTES SEG.SOCIAL AUTONOMOS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2014-01-27 12:53:01-03:00",
+                "idImpuesto": 308,
+                "periodo": 201712
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2019-05-03 12:00:00-03:00",
+                "idImpuesto": 21,
+                "periodo": 201904
+            },
+            {
+                "descripcionImpuesto": "IIBB CONVENIO MULTILATERAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2023-02-02 12:03:09-03:00",
+                "idImpuesto": 5900,
+                "periodo": 202303
+            },
+            {
+                "descripcionImpuesto": "INGRESOS BRUTOS JUJUY",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2023-02-02 12:03:09-03:00",
+                "idImpuesto": 5578,
+                "periodo": 202303
+            },
+            {
+                "descripcionImpuesto": "CONTRIBUCION MUNICIPAL JUJUY",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2023-02-02 12:03:09-03:00",
+                "idImpuesto": 5579,
+                "periodo": 202303
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "MARTINCHUS",
+        "numeroDocumento": "1154802",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "XXX S. A. S.",
+        "regimen": [],
+        "relacion": [],
+        "sexo": "FEMENINO",
+        "telefono": [
+            {
+                "numero": 46453153,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 3492655,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

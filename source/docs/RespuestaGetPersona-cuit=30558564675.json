@@ -1,0 +1,120 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:32.460000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS INMOBILIARIOS REALIZADOS A CAMBIO DE UNA RETRIBUCION O POR CONTRATA",
+                "idActividad": 702000,
+                "nomenclador": 150,
+                "orden": 1,
+                "periodo": 199903
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "LIBERTADOR DEL AV. 4966",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "AV LIBERTADOR 4966",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1951-10-31 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1993-06-03 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "CONS. PROPIET.",
+        "idPersona": 30558564675,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "SICORE - RETENCIONES Y PERCEPC",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1993-06-01 12:00:00-03:00",
+                "idImpuesto": 767,
+                "periodo": 199612
+            },
+            {
+                "descripcionImpuesto": "IVA EXENTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2008-09-08 12:37:50-03:00",
+                "idImpuesto": 32,
+                "periodo": 200808
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2020-08-01 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 202008
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1952-01-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 201301
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 10,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "EL CASAMIENTO DE DANIEL ENRIQUE",
+        "regimen": [
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 767,
+                "idRegimen": 523,
+                "periodo": 199612,
+                "tipoRegimen": null
+            }
+        ],
+        "relacion": [],
+        "sexo": null,
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

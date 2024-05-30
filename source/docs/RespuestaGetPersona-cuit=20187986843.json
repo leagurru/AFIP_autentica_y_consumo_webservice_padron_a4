@@ -1,0 +1,97 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:30.282000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "EXTRACCI\u00d3N Y AGLOMERACI\u00d3N DE TURBA",
+                "idActividad": 89200,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201412
+            }
+        ],
+        "apellido": "JOHN WILLIAN MICHAEL JOHN",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1741",
+                "datoAdicional": null,
+                "descripcionProvincia": "CATAMARCA",
+                "direccion": "HILARIO LAGOS 3924",
+                "idProvincia": 2,
+                "localidad": "G CATAN",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1741",
+                "datoAdicional": null,
+                "descripcionProvincia": "CATAMARCA",
+                "direccion": "HILARIO LAGOS 3924",
+                "idProvincia": 2,
+                "localidad": "G CATAN",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:64 Dpto:9",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-08-14 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1979-10-26 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20187986843,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201412
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": null,
+        "numeroDocumento": "18798684",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

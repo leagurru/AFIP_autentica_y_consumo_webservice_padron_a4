@@ -1,0 +1,170 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:28.699000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "CULTIVO DE MA\u00cdZ",
+                "idActividad": 11121,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201409
+            },
+            {
+                "descripcionActividad": "ALQUILER DE AUTOM\u00d3VILES SIN CONDUCTOR",
+                "idActividad": 771110,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 202306
+            }
+        ],
+        "apellido": "MICHELLE ELIZABETH",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "SANTA FE 7516",
+                "idProvincia": 3,
+                "localidad": "BARRIO YAPEYU",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "SANTA FE 7516",
+                "idProvincia": 3,
+                "localidad": "BARRIO YAPEYU",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:88 Dpto:5",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 3,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "gferrarazzo@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": "2023-06-02 12:51:55-03:00",
+        "fechaInscripcion": "2013-01-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1977-03-19 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20201731594,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "DERECHO ESPECIFICO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-08-03 12:45:15-03:00",
+                "idImpuesto": 2015,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2013-01-01 12:00:00-03:00",
+                "idImpuesto": 11,
+                "periodo": 201707
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2007-01-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 202107
+            },
+            {
+                "descripcionImpuesto": "IIBB CONVENIO MULTILATERAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2023-06-01 12:00:00-03:00",
+                "idImpuesto": 5900,
+                "periodo": 202306
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2023-06-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 202307
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "FELIX",
+        "numeroDocumento": "20173159",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": "CREDICOOP",
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2010-08-31 12:05:41-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20201731594,
+                "idPersonaAsociada": 20118376812,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            },
+            {
+                "ffRelacion": "2024-03-20 16:40:03-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20201731594,
+                "idPersonaAsociada": 20188142134,
+                "subtipoRelacion": null,
+                "tipoRelacion": "SUCESI\u00d3N BENEFICIARIO ANSES"
+            }
+        ],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 77889944,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            },
+            {
+                "numero": 43221540,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": "Banco",
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

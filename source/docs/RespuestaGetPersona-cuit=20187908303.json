@@ -1,0 +1,120 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:30.128000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE  CONSULTA M\u00c9DICA",
+                "idActividad": 862110,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201312
+            }
+        ],
+        "apellido": "CORRERE SANDALIO",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3180",
+                "datoAdicional": null,
+                "descripcionProvincia": "ENTRE RIOS",
+                "direccion": "COLONIA FEDERAL 4 Piso:49 Dpto:442",
+                "idProvincia": 5,
+                "localidad": "FEDERAL",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3180",
+                "datoAdicional": null,
+                "descripcionProvincia": "ENTRE RIOS",
+                "direccion": "COLONIA FEDERAL 0 Piso:00 Dpto:000",
+                "idProvincia": 5,
+                "localidad": "FEDERAL",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 1234 Piso:10 Dpto:A",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1870",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "TEST 1 Piso:2 Dpto:3 S:4 T:5 M:6",
+                "idProvincia": 1,
+                "localidad": "AVELLANEDA",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2018790830311@afip.gob.ar",
+                "estado": "No Confirmado por Aplicacion",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2019-05-31 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1966-02-16 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20187908303,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "CEDULARES- VALORES O DEPOSITOS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2019-05-31 12:23:56-03:00",
+                "idImpuesto": 1025,
+                "periodo": 201812
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "PEDRO",
+        "numeroDocumento": "18790830",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 55943790,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

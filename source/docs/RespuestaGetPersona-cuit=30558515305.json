@@ -1,0 +1,143 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.041000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS INMOBILIARIOS REALIZADOS POR CUENTA PROPIA, CON BIENES URBANOS PROPIOS O ARRENDADOS N.C.P.",
+                "idActividad": 681098,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201404
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": null,
+                "estado": "ACTIVO",
+                "idCategoria": 94,
+                "idImpuesto": 20,
+                "periodo": 201108
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "6070",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "AVDA MASSEY 2071",
+                "idProvincia": 1,
+                "localidad": "LINCOLN",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "6070",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "AVDA MASSEY 2071",
+                "idProvincia": 1,
+                "localidad": "LINCOLN",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3055851530517@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "SICNEA"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1980-10-13 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2010-01-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "SOC. ANONIMA",
+        "idPersona": 30558515305,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "RET ART 79 LEY GCIAS INC A,BYC",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-07-13 12:22:04-03:00",
+                "idImpuesto": 787,
+                "periodo": 202106
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-06-27 12:19:03-03:00",
+                "idImpuesto": 10,
+                "periodo": 200606
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-06-27 12:19:04-03:00",
+                "idImpuesto": 30,
+                "periodo": 200606
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 6,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2015-03-09 12:26:41-03:00",
+                "idImpuesto": 103,
+                "periodo": 200803
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 3,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 0.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "THE MAGICIAN PETER ALAN I",
+        "regimen": [
+            {
+                "descripcionRegimen": "RETENCIONES DE GANANCIAS DE JUBILACIONES Y PENSIONES",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 787,
+                "idRegimen": 718,
+                "periodo": 202106,
+                "tipoRegimen": "RETENCION"
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2020-06-26 19:08:26-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558515305,
+                "idPersonaAsociada": 20658874471,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            }
+        ],
+        "sexo": null,
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

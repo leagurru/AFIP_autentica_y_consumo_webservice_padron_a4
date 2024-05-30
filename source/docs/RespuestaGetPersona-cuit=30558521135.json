@@ -1,0 +1,127 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.204000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": null,
+                "idActividad": 0,
+                "nomenclador": 454,
+                "orden": 1,
+                "periodo": 198901
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "MNOOI 2123",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1427",
+                "datoAdicional": "N/A HANDELN",
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "CHARLONE 1798 P4-D",
+                "idProvincia": 1,
+                "localidad": "CAPITAL FEDERAL",
+                "orden": 1,
+                "tipoDatoAdicional": "NO DETERMINADO",
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1901-01-01 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1990-01-20 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "SOC. ANONIMA",
+        "idPersona": 30558521135,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "ACTIVOS SOCIEDADES L.23905",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1990-01-01 12:00:00-03:00",
+                "idImpuesto": 186,
+                "periodo": 199506
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 18,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1990-01-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 200209
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1976-01-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 197601
+            },
+            {
+                "descripcionImpuesto": "BP-ACCIONES O PARTICIPACIONES",
+                "diaPeriodo": 5,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2003-05-23 12:00:00-03:00",
+                "idImpuesto": 211,
+                "periodo": 200305
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2024-03-07 12:06:05-03:00",
+                "idImpuesto": 103,
+                "periodo": 200912
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": "Moron",
+        "mesCierre": 12,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": "13123",
+        "organismoInscripcion": "IGJ",
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": "BUENOS AIRES",
+        "razonSocial": "YOGI BEAR S PERSONAL FAVORITES NRO 376",
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2010-01-01 12:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558521135,
+                "idPersonaAsociada": 20210439413,
+                "subtipoRelacion": "DIRECTOR TITULAR",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            }
+        ],
+        "sexo": null,
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

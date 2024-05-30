@@ -1,0 +1,207 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.931000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SALADERO Y PELADERO DE CUEROS DE GANADO BOVINO",
+                "idActividad": 101013,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201311
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1416",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "ALVAREZ JONTE AV. 1632",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1416",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "ALVAREZ JONTE AV 1637",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "4600",
+                "datoAdicional": null,
+                "descripcionProvincia": "JUJUY",
+                "direccion": "AV. SENADOR PEREZ 83",
+                "idProvincia": 6,
+                "localidad": "ALTO LA VI\u00d1A",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3055853536517@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "SICNEA"
+            },
+            {
+                "direccion": "e3055853536521@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1976-01-28 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1992-10-19 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "ORGAN. PUBLICO",
+        "idPersona": 30558535365,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1975-01-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 197501
+            },
+            {
+                "descripcionImpuesto": "SICORE - RETENCIONES Y PERCEPC",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1992-10-01 12:00:00-03:00",
+                "idImpuesto": 767,
+                "periodo": 199612
+            },
+            {
+                "descripcionImpuesto": "SICORE-IMPTO.A LAS GANANCIAS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2010-03-15 12:00:00-03:00",
+                "idImpuesto": 217,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "RETENCIONES CONTRIB.SEG.SOCIAL",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2010-03-15 12:00:00-03:00",
+                "idImpuesto": 353,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2012-03-29 12:58:17-03:00",
+                "idImpuesto": 10,
+                "periodo": 201309
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2012-03-29 12:43:45-03:00",
+                "idImpuesto": 103,
+                "periodo": 201309
+            },
+            {
+                "descripcionImpuesto": "RESP DEUDA AJENA BP - ACC O PA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2013-09-09 12:35:14-03:00",
+                "idImpuesto": 212,
+                "periodo": 201309
+            },
+            {
+                "descripcionImpuesto": "IVA EXENTO",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2013-09-04 12:14:48-03:00",
+                "idImpuesto": 32,
+                "periodo": 201309
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": "san miguel de  tucuman",
+        "mesCierre": 10,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": "1245",
+        "organismoInscripcion": "IGJ",
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": "TUCUMAN",
+        "razonSocial": "TEMPORADA DE CRISTIAN OMAR",
+        "regimen": [
+            {
+                "descripcionRegimen": "REG.RET.A LAS GANANCIAS - LOCACIONES DE OBRAS Y/O SERVICIOS, NO EJECUTADOS EN RELACION DE DEPENDENCIA, QUE NO SE ENCUENTREN TAXATIVAMENTE MENCIONADOS EN LOS INCISOS I Y J.",
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 217,
+                "idRegimen": 94,
+                "periodo": 201101,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "RETENCION CONTRIBUCIONES PATRONALES PRESTACION SERVICIOS DE INVESTIGACI\u00d3N Y SEGURIDAD",
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 353,
+                "idRegimen": 754,
+                "periodo": 201101,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 767,
+                "idRegimen": 523,
+                "periodo": 199612,
+                "tipoRegimen": null
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2012-02-28 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558535365,
+                "idPersonaAsociada": 20210021184,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 9440088,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "DEL CONTADOR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

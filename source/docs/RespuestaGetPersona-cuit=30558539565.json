@@ -1,0 +1,164 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:32.305000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "REPARACI\u00d3N DE EFECTOS PERSONALES Y ENSERES DOM\u00c9STICOS N.C.P.",
+                "idActividad": 952990,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201312
+            },
+            {
+                "descripcionActividad": "PESCA Y ELABORACI\u00d3N DE PRODUCTOS MARINOS REALIZADA A BORDO DE BUQUES PROCESADORES",
+                "idActividad": 31120,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 201901
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1009",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "PELLEGRINI CARLOS 1055",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "TEST 433",
+                "idProvincia": 3,
+                "localidad": "BARRIO GUEMES",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3055853956515@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": "1975-12-22 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1992-04-28 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "CONS. PROPIET.",
+        "idPersona": 30558539565,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1976-02-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 201701
+            },
+            {
+                "descripcionImpuesto": "SICORE - RETENCIONES Y PERCEPC",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1992-04-01 12:00:00-03:00",
+                "idImpuesto": 767,
+                "periodo": 199612
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-10-30 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 201011
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2016-10-30 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201311
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2015-06-05 12:29:00-03:00",
+                "idImpuesto": 25,
+                "periodo": 201812
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 10,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 100.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "TEMPORADA DE DANIEL ROBERTO",
+        "regimen": [
+            {
+                "descripcionRegimen": null,
+                "diaPeriodo": null,
+                "estado": "BAJA DEFINITIVA",
+                "idImpuesto": 767,
+                "idRegimen": 523,
+                "periodo": 199612,
+                "tipoRegimen": null
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2013-09-30 12:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558539565,
+                "idPersonaAsociada": 20210021184,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2010-09-28 12:05:41-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558539565,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 57217752,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

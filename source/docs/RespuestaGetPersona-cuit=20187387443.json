@@ -1,0 +1,101 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:30.661000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [],
+        "apellido": "CRIED ALEJANDRO",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "9200",
+                "datoAdicional": null,
+                "descripcionProvincia": "CHUBUT",
+                "direccion": "HOLDICH 8",
+                "idProvincia": 17,
+                "localidad": "ESQUEL",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "9200",
+                "datoAdicional": null,
+                "descripcionProvincia": "CHUBUT",
+                "direccion": "HOLDICH 0",
+                "idProvincia": 17,
+                "localidad": "ESQUEL",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 1234 Piso:10 Dpto:A",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2018738744312@afip.gob.ar",
+                "estado": "No Confirmado por Aplicacion",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-08-13 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1967-08-05 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20187387443,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201412
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": null,
+        "numeroDocumento": "18738744",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 23792012,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

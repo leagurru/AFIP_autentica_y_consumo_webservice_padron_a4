@@ -1,0 +1,106 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.236000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [],
+        "apellido": "IPRKI",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3300",
+                "datoAdicional": null,
+                "descripcionProvincia": "MISIONES",
+                "direccion": "JUAN JOSE PASO 69",
+                "idProvincia": 19,
+                "localidad": "POSADAS",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3300",
+                "datoAdicional": null,
+                "descripcionProvincia": "MISIONES",
+                "direccion": "JUAN JOSE PASO 69",
+                "idProvincia": 19,
+                "localidad": "POSADAS",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:19 Dpto:9",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2016859820412@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": "2014-01-13 12:13:04-03:00",
+        "fechaInscripcion": "2008-09-27 12:35:25-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1964-03-31 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20168598204,
+        "impuesto": [],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "VKRSP",
+        "numeroDocumento": "16859820",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2013-06-14 00:00:00-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20168598204,
+                "idPersonaAsociada": 20188189483,
+                "subtipoRelacion": null,
+                "tipoRelacion": "CLAVE INACTIVA"
+            }
+        ],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 38073407,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "PARTICULAR"
+            },
+            {
+                "numero": 83118925,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

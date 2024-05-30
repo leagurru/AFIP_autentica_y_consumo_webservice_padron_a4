@@ -1,0 +1,215 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:28.187000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "FABRICACI\u00d3N DE CART\u00d3N ONDULADO Y ENVASES DE CART\u00d3N",
+                "idActividad": 170202,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 202201
+            },
+            {
+                "descripcionActividad": "ESTUDIANTE",
+                "idActividad": 8,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 202201
+            }
+        ],
+        "apellido": "MURCHENIK",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3000",
+                "datoAdicional": null,
+                "descripcionProvincia": "SANTA FE",
+                "direccion": "SAN JUAN 7794",
+                "idProvincia": 12,
+                "localidad": "SANTA FE",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3000",
+                "datoAdicional": null,
+                "descripcionProvincia": "SANTA FE",
+                "direccion": "SAN JUAN 4052",
+                "idProvincia": 12,
+                "localidad": "SANTA FE",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:67 Dpto:3",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "ORO 1812",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "ORTIZ 922",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 3,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "LOPEZ 1011",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 4,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "0000",
+                "datoAdicional": "www.sitioweb2022070751335.com.ar",
+                "descripcionProvincia": null,
+                "direccion": null,
+                "idProvincia": null,
+                "localidad": null,
+                "orden": 5,
+                "tipoDatoAdicional": "SITIO WEB",
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "ANDRADE 157",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 6,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "1712",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "DOMINGUEZ 7094",
+                "idProvincia": 1,
+                "localidad": "CASTELAR",
+                "orden": 7,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2022070751311@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2011-04-27 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1975-05-22 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20220707513,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-07-19 12:01:26-03:00",
+                "idImpuesto": 11,
+                "periodo": 201101
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2011-07-19 12:01:26-03:00",
+                "idImpuesto": 30,
+                "periodo": 201312
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "EDBERTOR",
+        "numeroDocumento": "22070751",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2021-08-06 15:55:06-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20220707513,
+                "idPersonaAsociada": 20182480593,
+                "subtipoRelacion": null,
+                "tipoRelacion": null
+            },
+            {
+                "ffRelacion": "2019-02-28 18:06:20-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20220707513,
+                "idPersonaAsociada": 20220707513,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            },
+            {
+                "ffRelacion": "2021-08-06 16:04:10-03:00",
+                "ffVencimiento": null,
+                "idPersona": 20220707513,
+                "idPersonaAsociada": 27170944971,
+                "subtipoRelacion": null,
+                "tipoRelacion": null
+            }
+        ],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 86868968,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

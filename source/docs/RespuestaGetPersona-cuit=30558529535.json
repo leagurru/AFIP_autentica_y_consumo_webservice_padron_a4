@@ -1,0 +1,205 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:31.781000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "FUNDICI\u00d3N DE METALES NO FERROSOS",
+                "idActividad": 243200,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201311
+            },
+            {
+                "descripcionActividad": "VENTA AL POR MAYOR DE METALES Y MINERALES METAL\u00cdFEROS",
+                "idActividad": 466200,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 201311
+            }
+        ],
+        "apellido": null,
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1757",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "JUAN MANUEL DE ROSAS 10784",
+                "idProvincia": 1,
+                "localidad": "GREGORIO DE LAFERRERE",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1140",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "PIEDRAS 1319",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e3055852953528@afip.gob.ar",
+                "estado": "No Confirmado por Aplicacion",
+                "tipoEmail": "E-VENTANILLA"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": "1977-06-26 12:00:00-03:00",
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1901-01-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": null,
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "SOC. ANONIMA",
+        "idPersona": 30558529535,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "ACTIVOS SOCIEDADES L.23905",
+                "diaPeriodo": 1,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "1982-04-01 12:00:00-03:00",
+                "idImpuesto": 186,
+                "periodo": 199506
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1989-03-01 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 198903
+            },
+            {
+                "descripcionImpuesto": "SICORE-IMPTO.A LAS GANANCIAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2001-06-07 12:00:00-03:00",
+                "idImpuesto": 217,
+                "periodo": 200001
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1971-03-01 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 197103
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS SOCIEDADES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "1978-05-01 12:00:00-03:00",
+                "idImpuesto": 10,
+                "periodo": 197805
+            },
+            {
+                "descripcionImpuesto": "BP-ACCIONES O PARTICIPACIONES",
+                "diaPeriodo": 5,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2003-05-23 12:00:00-03:00",
+                "idImpuesto": 211,
+                "periodo": 200305
+            },
+            {
+                "descripcionImpuesto": "REGIMENES DE INFORMACI\u00d3N",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2009-08-10 12:00:00-03:00",
+                "idImpuesto": 103,
+                "periodo": 200701
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2000-06-29 12:00:00-03:00",
+                "idImpuesto": 25,
+                "periodo": 201612
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": null,
+        "numeroDocumento": null,
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": 0.0,
+        "provinciaInscripcion": null,
+        "razonSocial": "KKOOPR KIP SG",
+        "regimen": [
+            {
+                "descripcionRegimen": "ENAJENACION DE BIENES MUEBLES Y BIENES DE CAMBIO",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 217,
+                "idRegimen": 78,
+                "periodo": 200001,
+                "tipoRegimen": "RETENCION"
+            },
+            {
+                "descripcionRegimen": "HONORARIOS DE DIRECTOR DE S.A., FIDUCIARIO, INTEGRANTE DE CONSEJOS DE VIGILANCIA, Y SOCIOS ADMINISTRADORES DE S.R.L., EN COMANDITA SIMPLE Y POR ACCIONES,\nALBACEA, SINDICO, MANDATARIO, GESTOR DE NEGOCIO.",
+                "diaPeriodo": null,
+                "estado": "ACTIVO",
+                "idImpuesto": 217,
+                "idRegimen": 116,
+                "periodo": 200001,
+                "tipoRegimen": "RETENCION"
+            }
+        ],
+        "relacion": [
+            {
+                "ffRelacion": "2007-05-14 04:38:25-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558529535,
+                "idPersonaAsociada": 20085054040,
+                "subtipoRelacion": "PRESIDENTE",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2007-05-14 04:38:25-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558529535,
+                "idPersonaAsociada": 20236787959,
+                "subtipoRelacion": "OTROS CARGOS",
+                "tipoRelacion": "SOCIEDAD CON INTEGRANTES"
+            },
+            {
+                "ffRelacion": "2010-09-28 12:05:41-03:00",
+                "ffVencimiento": null,
+                "idPersona": 30558529535,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": null,
+                "tipoRelacion": "PERSONA JURIDICA/ PERSONA FISICA REPRESENTADA"
+            }
+        ],
+        "sexo": null,
+        "telefono": [
+            {
+                "numero": 48532328,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": null,
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "JURIDICA",
+        "tipoResidencia": null
+    }
+}

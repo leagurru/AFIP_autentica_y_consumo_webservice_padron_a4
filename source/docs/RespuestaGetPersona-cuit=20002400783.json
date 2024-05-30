@@ -1,0 +1,109 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.738000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE INTERMEDIACI\u00d3N FINANCIERA REALIZADA POR CAJAS DE CR\u00c9DITO",
+                "idActividad": 641943,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201412
+            }
+        ],
+        "apellido": "EUIOG SGIOKR",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "0000",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "LAS HERAS 3385",
+                "idProvincia": 1,
+                "localidad": "VICENTE LOPEZ",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "0000",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "LAS HERAS 3385",
+                "idProvincia": 1,
+                "localidad": "VICENTE LOPEZ",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:18 Dpto:4",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "mpazos@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1994-05-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1910-01-01 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20002400783,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201906
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": null,
+        "numeroDocumento": "240078",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 39164788,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "LE",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

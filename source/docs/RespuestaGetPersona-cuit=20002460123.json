@@ -1,0 +1,245 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:27.465000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SALADERO Y PELADERO DE CUEROS DE GANADO BOVINO",
+                "idActividad": 101013,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201312
+            }
+        ],
+        "apellido": "IGOR",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [
+            20072057733
+        ],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1408",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "BOSCH VENTURA 6325 Piso:5 Dpto:7 S:7 T:8 M:3",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "4500",
+                "datoAdicional": "BARRIO CHISTOPHER",
+                "descripcionProvincia": "JUJUY",
+                "direccion": "SIN CALLE 1",
+                "idProvincia": 6,
+                "localidad": "SAN PEDRO DE JUJUY",
+                "orden": 1,
+                "tipoDatoAdicional": "BARRIO",
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:53 Dpto:5",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2000246012311@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2011-08-03 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1942-03-12 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "EMP. DEL ESTADO",
+        "idPersona": 20002460123,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "CEDULARES- VALORES O DEPOSITOS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 1025,
+                "periodo": 201901
+            },
+            {
+                "descripcionImpuesto": "FONDO P/EDUC.Y PROM.COOPTIVA.",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 154,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "IMPUESTO TRANSF DE INMUEBLES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 172,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "SICORE-IMPTO.A LAS GANANCIAS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 217,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "PRESENTAC. DJ RET. Y/O PERCEP",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 220,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "SICORE - RETENCIONES Y PERCEPC",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 767,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "RET ART 79 LEY GCIAS INC A,BYC",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 787,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "CEDULARES - INMUEBLES",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 1026,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "IMP S/DEB Y CRED EN CTA CTE",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-01-01 12:30:59-03:00",
+                "idImpuesto": 149,
+                "periodo": 201801
+            },
+            {
+                "descripcionImpuesto": "RESP DEUDA AJENA BP - ACC O PA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2013-08-29 12:15:45-03:00",
+                "idImpuesto": 212,
+                "periodo": 200801
+            },
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2014-02-07 12:56:16-03:00",
+                "idImpuesto": 30,
+                "periodo": 201401
+            },
+            {
+                "descripcionImpuesto": "GANANCIA MINIMA PRESUNTA",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2011-08-03 12:49:13-03:00",
+                "idImpuesto": 25,
+                "periodo": 201209
+            },
+            {
+                "descripcionImpuesto": "FONDO P/EDUC.Y PROM.COOPTIVA.",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2000-01-01 12:50:04-03:00",
+                "idImpuesto": 154,
+                "periodo": 201201
+            },
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2020-01-01 12:00:00-03:00",
+                "idImpuesto": 11,
+                "periodo": 202301
+            },
+            {
+                "descripcionImpuesto": "EMPLEADOR-APORTES SEG. SOCIAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2000-09-13 12:00:00-03:00",
+                "idImpuesto": 301,
+                "periodo": 201801
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "GEORGE JOSEPH",
+        "numeroDocumento": "246012",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "XXX  S.A.S.",
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2024-05-10 00:00:00-03:00",
+                "ffVencimiento": "2024-05-31 00:00:00-03:00",
+                "idPersona": 20002460123,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": "RETIRAR VALORES",
+                "tipoRelacion": "PODERDANTE"
+            },
+            {
+                "ffRelacion": "2024-05-10 00:00:00-03:00",
+                "ffVencimiento": "2024-06-12 00:00:00-03:00",
+                "idPersona": 20002460123,
+                "idPersonaAsociada": 20666666667,
+                "subtipoRelacion": "DECLARACIONES JURADAS",
+                "tipoRelacion": "PODERDANTE"
+            }
+        ],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 80633343,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "CONTACTO ADUANERO"
+            },
+            {
+                "numero": 363648892644284,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "LE",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": "NO RESIDENTE"
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:28.529000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "ELABORACI\u00d3N DE ACEITE DE OLIVA",
+                "idActividad": 104012,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 202201
+            }
+        ],
+        "apellido": "MARJORIER",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "A VENTAS DE COSAS MUEBLES",
+                "estado": "ACTIVO",
+                "idCategoria": 9,
+                "idImpuesto": 20,
+                "periodo": 202403
+            },
+            {
+                "descripcionCategoria": "A VENTAS DE COSAS MUEBLES - ACTIVO",
+                "estado": "ACTIVO",
+                "idCategoria": 23,
+                "idImpuesto": 21,
+                "periodo": 202403
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1030",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "LARREA 1 Piso:2 Dpto:2 S:4 T:1 M:6",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "1030",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "LARREA 1 Piso:2 Dpto:2 S:4 T:1 M:6",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:88 Dpto:2",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            },
+            {
+                "codPostal": "8000",
+                "datoAdicional": null,
+                "descripcionProvincia": "BUENOS AIRES",
+                "direccion": "TREWE 22",
+                "idProvincia": 1,
+                "localidad": "ADELA CORTI",
+                "orden": 2,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2022106423315@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "PERSONAL INTERNET"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-10-13 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1970-12-30 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20221064233,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 29,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2004-04-02 12:04:47-03:00",
+                "idImpuesto": 30,
+                "periodo": 202402
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2024-03-21 12:45:24-03:00",
+                "idImpuesto": 20,
+                "periodo": 202403
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2024-03-21 12:45:24-03:00",
+                "idImpuesto": 21,
+                "periodo": 202403
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "LAMARA",
+        "numeroDocumento": "22106423",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": "CREDICOOP",
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [
+            {
+                "ffRelacion": "2024-05-20 00:00:00-03:00",
+                "ffVencimiento": "2024-05-31 00:00:00-03:00",
+                "idPersona": 20221064233,
+                "idPersonaAsociada": 20221124643,
+                "subtipoRelacion": "AUTORIZACION PLENA",
+                "tipoRelacion": "PODERDANTE"
+            }
+        ],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 92045593,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "DEL ASESOR"
+            },
+            {
+                "numero": 82154082,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "PARTICULAR"
+            },
+            {
+                "numero": 56401687,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": "Banco",
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

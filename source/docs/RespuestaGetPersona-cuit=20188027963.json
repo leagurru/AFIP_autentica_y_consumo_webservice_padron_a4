@@ -1,0 +1,113 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:30.446000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "JUBILADO",
+                "idActividad": 7,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201910
+            }
+        ],
+        "apellido": "PANIAGUA KOLER",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "D LOCACIONES DE SERVICIO",
+                "estado": "ACTIVO",
+                "idCategoria": 38,
+                "idImpuesto": 20,
+                "periodo": 201902
+            },
+            {
+                "descripcionCategoria": "D LOCACIONES DE SERVICIO - ACTIVO",
+                "estado": "ACTIVO",
+                "idCategoria": 18,
+                "idImpuesto": 21,
+                "periodo": 201902
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "1406",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MARTINEZ VICTOR 423",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "4600",
+                "datoAdicional": null,
+                "descripcionProvincia": "JUJUY",
+                "direccion": "MARTINEZ VICTOR 423",
+                "idProvincia": 6,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "gdeuschle@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2008-10-10 12:04:27-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1947-05-06 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20188027963,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "CEDULARES- VALORES O DEPOSITOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2019-10-01 12:00:00-03:00",
+                "idImpuesto": 1025,
+                "periodo": 201910
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "VENANCIO",
+        "numeroDocumento": "18802796",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 94477607,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": "PERMANENTE"
+    }
+}

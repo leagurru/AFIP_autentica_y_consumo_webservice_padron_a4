@@ -1,0 +1,168 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:28-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE ASESORAMIENTO, DIRECCI\u00d3N Y GESTI\u00d3N EMPRESARIAL REALIZADOS POR INTEGRANTES DE LOS \u00d3RGANOS DE ADMINISTRACI\u00d3N Y/O FISCALIZACI\u00d3N EN SOCIEDADES AN\u00d3NIMAS",
+                "idActividad": 702091,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201811
+            }
+        ],
+        "apellido": "PATAGER",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "A MONOTRIBUTO SOCIAL AGROP.",
+                "estado": "ACTIVO",
+                "idCategoria": 61,
+                "idImpuesto": 20,
+                "periodo": 201811
+            },
+            {
+                "descripcionCategoria": "NO APORTANTE AL REGIMEN",
+                "estado": "ACTIVO",
+                "idCategoria": 11,
+                "idImpuesto": 21,
+                "periodo": 201811
+            },
+            {
+                "descripcionCategoria": null,
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 40,
+                "idImpuesto": 308,
+                "periodo": 201810
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "PELICANO 3077 Piso:22 Dpto:2 S:88  M:931",
+                "idProvincia": 3,
+                "localidad": "BARRIO INDEPENDENCIA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "RES 333",
+                "idProvincia": 3,
+                "localidad": "BARRIO GUEMES",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:86 Dpto:6",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2020008339411@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-10-22 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1968-01-17 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": "FIDEICOMISO PUBLICO",
+        "idPersona": 20200083394,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "APORTES SEG.SOCIAL AUTONOMOS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2018-01-01 12:00:00-03:00",
+                "idImpuesto": 308,
+                "periodo": 201810
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2018-12-04 12:00:00-03:00",
+                "idImpuesto": 20,
+                "periodo": 201811
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2018-12-04 12:00:00-03:00",
+                "idImpuesto": 21,
+                "periodo": 201811
+            },
+            {
+                "descripcionImpuesto": "REG. SIMPLIFICADO IIBB CORDOBA",
+                "diaPeriodo": 1,
+                "estado": "EXENTO ",
+                "ffInscripcion": "2018-12-04 12:25:42-03:00",
+                "idImpuesto": 5243,
+                "periodo": 201811
+            },
+            {
+                "descripcionImpuesto": "CONTRIBUCION MUNICIPAL CORDOBA",
+                "diaPeriodo": 1,
+                "estado": "NO APORTANTE/NO ALCANZADO",
+                "ffInscripcion": "2018-12-04 12:25:42-03:00",
+                "idImpuesto": 5244,
+                "periodo": 201811
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "GEORGE",
+        "numeroDocumento": "20008339",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": "XXX S A S",
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 34108985,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            },
+            {
+                "numero": 43221540,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "COMERCIAL"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": "Banco",
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

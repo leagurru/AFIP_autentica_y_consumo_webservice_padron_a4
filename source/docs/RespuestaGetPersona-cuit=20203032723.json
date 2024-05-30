@@ -1,0 +1,173 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.060000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "CULTIVO DE TABACO",
+                "idActividad": 11400,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201911
+            },
+            {
+                "descripcionActividad": "TRABAJADOR RELAC. DEPENDENCIA ",
+                "idActividad": 11,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 201911
+            }
+        ],
+        "apellido": "ROSMARIE",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [
+            {
+                "descripcionCategoria": "A ACTIVIDAD PRIMARIA",
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 97,
+                "idImpuesto": 20,
+                "periodo": 202101
+            },
+            {
+                "descripcionCategoria": "A ACTIVIDAD PRIMARIA - ACTIVO",
+                "estado": "BAJA DEFINITIVA",
+                "idCategoria": 35,
+                "idImpuesto": 21,
+                "periodo": 202101
+            }
+        ],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "5000",
+                "datoAdicional": null,
+                "descripcionProvincia": "CORDOBA",
+                "direccion": "MEJICO 1000",
+                "idProvincia": 3,
+                "localidad": "ALTO ALBERDI",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "5600",
+                "datoAdicional": null,
+                "descripcionProvincia": "MENDOZA",
+                "direccion": "MEJICO 1000",
+                "idProvincia": 7,
+                "localidad": "EL CERRITO",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "jmalpeli@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "PERSONAL"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2017-09-29 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1928-10-02 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20203032723,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "GANANCIAS PERSONAS FISICAS",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2021-09-03 12:40:24-03:00",
+                "idImpuesto": 11,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "IVA EXENTO",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2021-09-03 12:06:49-03:00",
+                "idImpuesto": 32,
+                "periodo": 202104
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2020-01-08 12:54:54-03:00",
+                "idImpuesto": 20,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "MONOTRIBUTO AUTONOMO",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2020-01-08 12:54:54-03:00",
+                "idImpuesto": 21,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "REG. SIMPLIFICADO IIBB CORDOBA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2020-01-08 12:54:54-03:00",
+                "idImpuesto": 5243,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "CONTRIBUCION MUNICIPAL CORDOBA",
+                "diaPeriodo": 31,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2020-01-08 12:54:54-03:00",
+                "idImpuesto": 5244,
+                "periodo": 202101
+            },
+            {
+                "descripcionImpuesto": "IIBB CONVENIO MULTILATERAL",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2019-10-01 12:00:00-03:00",
+                "idImpuesto": 5900,
+                "periodo": 201910
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": 12,
+        "nombre": "FACUNDO NICOLAS",
+        "numeroDocumento": "14181349",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": "CREDICOOP",
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 42563240,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "PARTICULAR"
+            },
+            {
+                "numero": 96857874,
+                "tipoLinea": "M\u00d3VIL",
+                "tipoTelefono": "PARTICULAR"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": "Banco",
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.393000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE SOCIEDADES DE CARTERA",
+                "idActividad": 642000,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201412
+            }
+        ],
+        "apellido": "SORRILLA",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "3600",
+                "datoAdicional": null,
+                "descripcionProvincia": "FORMOSA",
+                "direccion": "B J D PERON CASA 8 Piso:82 Dpto:801",
+                "idProvincia": 18,
+                "localidad": "FORMOSA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "3600",
+                "datoAdicional": null,
+                "descripcionProvincia": "FORMOSA",
+                "direccion": "B J D PERON CASA 8 Piso:82 Dpto:801",
+                "idProvincia": 18,
+                "localidad": "FORMOSA",
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:35 Dpto:7",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "e2018815385315@afip.gob.ar",
+                "estado": "No Verificado",
+                "tipoEmail": "PERSONAL INTERNET"
+            }
+        ],
+        "estadoClave": "ACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "2001-08-13 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1979-09-01 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20188153853,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 31,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201412
+            },
+            {
+                "descripcionImpuesto": "CEDULARES- VALORES O DEPOSITOS",
+                "diaPeriodo": 1,
+                "estado": "ACTIVO",
+                "ffInscripcion": "2019-06-05 12:14:19-03:00",
+                "idImpuesto": 1025,
+                "periodo": 201801
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": "EGIDIO",
+        "numeroDocumento": "18815385",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [
+            {
+                "numero": 93037518,
+                "tipoLinea": "FIJO",
+                "tipoTelefono": "CAMPA\u00d1A TELEF\u00d3NICA"
+            }
+        ],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "DNI",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "metadata": {
+        "fechaHora": "2024-05-30 12:48:29.572000-03:00",
+        "servidor": "setiwsh2"
+    },
+    "persona": {
+        "actividad": [
+            {
+                "descripcionActividad": "SERVICIOS DE CR\u00c9DITO N.C.P.",
+                "idActividad": 649290,
+                "nomenclador": 883,
+                "orden": 1,
+                "periodo": 201412
+            },
+            {
+                "descripcionActividad": "PESCA Y ELABORACI\u00d3N DE PRODUCTOS MARINOS REALIZADA A BORDO DE BUQUES PROCESADORES",
+                "idActividad": 31120,
+                "nomenclador": 883,
+                "orden": 2,
+                "periodo": 201901
+            }
+        ],
+        "apellido": "PAUL DEREK PABLO NICOLAS",
+        "cantidadSociosEmpresaMono": null,
+        "categoria": [],
+        "claveInactivaAsociada": [],
+        "dependencia": null,
+        "domicilio": [
+            {
+                "codPostal": "0000",
+                "datoAdicional": "BARRIO NANCY",
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "BILLINGHURST 1664",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": "BARRIO",
+                "tipoDomicilio": "FISCAL"
+            },
+            {
+                "codPostal": "0000",
+                "datoAdicional": "BARRIO NANCY",
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "BILLINGHURST 1664",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": "BARRIO",
+                "tipoDomicilio": "LEGAL/REAL"
+            },
+            {
+                "codPostal": "1426",
+                "datoAdicional": null,
+                "descripcionProvincia": "CIUDAD AUTONOMA BUENOS AIRES",
+                "direccion": "MIGUELETES 401 Piso:54 Dpto:7",
+                "idProvincia": 0,
+                "localidad": null,
+                "orden": 1,
+                "tipoDatoAdicional": null,
+                "tipoDomicilio": "LOCALES Y ESTABLECIMIENTOS"
+            }
+        ],
+        "email": [
+            {
+                "direccion": "afip6@afip.gob.ar",
+                "estado": "Confirmado",
+                "tipoEmail": "COMERCIAL"
+            }
+        ],
+        "estadoClave": "INACTIVO",
+        "fechaContratoSocial": null,
+        "fechaFallecimiento": null,
+        "fechaInscripcion": "1994-05-01 12:00:00-03:00",
+        "fechaJubilado": null,
+        "fechaNacimiento": "1893-01-01 12:00:00-03:00",
+        "fechaVencimientoMigracion": null,
+        "formaJuridica": null,
+        "idPersona": 20002195624,
+        "impuesto": [
+            {
+                "descripcionImpuesto": "IVA",
+                "diaPeriodo": 30,
+                "estado": "BAJA DEFINITIVA",
+                "ffInscripcion": "2014-03-12 12:00:00-03:00",
+                "idImpuesto": 30,
+                "periodo": 201906
+            }
+        ],
+        "leyJubilacion": null,
+        "localidadInscripcion": null,
+        "mesCierre": null,
+        "nombre": null,
+        "numeroDocumento": "219562",
+        "numeroInscripcion": null,
+        "organismoInscripcion": null,
+        "organismoOriginante": null,
+        "porcentajeCapitalNacional": null,
+        "provinciaInscripcion": null,
+        "razonSocial": null,
+        "regimen": [],
+        "relacion": [],
+        "sexo": "MASCULINO",
+        "telefono": [],
+        "tipoClave": "CUIT",
+        "tipoDocumento": "LE",
+        "tipoOrganismoOriginante": null,
+        "tipoPersona": "FISICA",
+        "tipoResidencia": null
+    }
+}
