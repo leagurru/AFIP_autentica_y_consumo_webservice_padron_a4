@@ -12,35 +12,34 @@ import datetime
 import os
 import sys
 import time
-
-from lxml import etree
+import base64
 import xml.etree.ElementTree as ET
 
+from lxml import etree
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.serialization import Encoding
 from cryptography.hazmat.primitives.serialization import load_pem_private_key
 from cryptography.hazmat.primitives.serialization.pkcs7 import PKCS7Options
 from cryptography.hazmat.primitives.serialization.pkcs7 import PKCS7SignatureBuilder
 from cryptography.x509 import load_pem_x509_certificate
-import base64
 from zeep import Client
 from zeep.transports import Transport
 from zeep.exceptions import Fault
-
 from requests import Session
 
 ####################################################################################
 # Constantes: definición
 ####################################################################################
-WSDL = "docs/wsaa.wsdl"
+WSDL_HOMOLOGACION = "docs/wsaa_homologacion.wsdl"
 ARCHIVO_CERTIFICADO_X509 = "certificados/certificado_x509.pem"                # a definir en cada caso
 ARCHIVO_CERTIFICADO_CLAVEPRIVADA = "certificados/claveprivada.pk"             # a definir en cada caso
 PASSPHRASE = None  # Sin passphrase si la clave privada no está encriptada    # a definir en cada caso
 PROXY_HOST = "10.1.1.10"                                                      # a definir en cada caso
 PROXY_PORT = 51966                                                            # a definir en cada caso
-URL_TESTING_LOGIN = "https://wsaahomo.afip.gov.ar/ws/services/LoginCms"
-URL_PRODUCCION_LOGIN = "https://wsaa.afip.gov.ar/ws/services/LoginCms"
+# URL_TESTING_LOGIN = "https://wsaahomo.afip.gov.ar/ws/services/LoginCms"     # incluido en wsaa.wsdl
+# URL_PRODUCCION_LOGIN = "https://wsaa.afip.gov.ar/ws/services/LoginCms"
 SERVICIO = "ws_sr_padron_a4"
+ARCHIVO_TRA = "docs/LoginTicketRequest.xml"
 ARCHIVO_XML_CMS = "docs/LoginTicketRequest.xml.cms"
 ARCHIVO_TICKET_DE_ACCESO_AFIP = "docs/TicketAFIP.xml"
 ####################################################################################
@@ -68,18 +67,15 @@ def call_wsaa(request):
     }
 
     # Crear el cliente SOAP
-    client = Client(WSDL, transport=Transport(session=session))
+    client = Client(WSDL_HOMOLOGACION, transport=Transport(session=session))
 
     try:
         # Llamar al método loginCms del servicio
         result = client.service.loginCms(in0=request)
 
+        # se genera el archivo con el ticket de acceso a la afip
         with open(ARCHIVO_TICKET_DE_ACCESO_AFIP, "w") as response_file:
             response_file.write(result)
-
-        # with open("response-loginCms.xml", "w") as response_file:
-        #     response_file.write(result)
-
 
         return result
 
@@ -88,7 +84,7 @@ def call_wsaa(request):
         return None
 
 
-def obtener_o_crear_tra(servicio, hoy, tra):
+def crear_tra(servicio, hoy, tra):
 
     hoy_iso = (hoy - datetime.timedelta(seconds=60)).isoformat()
     maniana = hoy + + datetime.timedelta(days=1)
@@ -152,18 +148,10 @@ def verifico_vigencia_del_ticket(xml_file_path):
     expiration_time_str = root.find('.//expirationTime').text
 
     # Parse the expiration time string into a datetime object
-    # expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S')
     expiration_time = datetime.datetime.strptime(expiration_time_str, '%Y-%m-%dT%H:%M:%S.%f%z').replace(tzinfo=None)
 
     # Get the current time
-    # Get the current time with timezone info
     now = datetime.datetime.now()
-
-    # Format the datetime object to the desired string format
-    formatted_now = now.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
-
-    # now = datetime.datetime.now().isoformat()  # Use the same timezone as the expiration time
-    # now = datetime.datetime.now(expiration_time.tzinfo)  # Use the same timezone as the expiration time
 
     # Compare expiration time with current time
     if expiration_time > now:
@@ -175,15 +163,24 @@ def verifico_vigencia_del_ticket(xml_file_path):
 def main():
 
     if not os.path.exists(ARCHIVO_CERTIFICADO_X509):
-        print(f"Failed to open {ARCHIVO_CERTIFICADO_X509}")
+        print(
+            f"No se pudo abrir el archivo con el Certificado X509, que debe estar ubicado en "
+            f"{ARCHIVO_CERTIFICADO_X509}"
+        )
         sys.exit(1)
 
     if not os.path.exists(ARCHIVO_CERTIFICADO_CLAVEPRIVADA):
-        print(f"Failed to open {ARCHIVO_CERTIFICADO_CLAVEPRIVADA}")
+        print(
+            f"No se pudo abrir el archivo con la Clave Privada, que debe estar ubicado en "
+            f"{ARCHIVO_CERTIFICADO_CLAVEPRIVADA}"
+        )
         sys.exit(1)
 
-    if not os.path.exists(WSDL):
-        print(f"Failed to open {WSDL}")
+    if not os.path.exists(WSDL_HOMOLOGACION):
+        print(
+            f"No se pudo abrir del WSDL del entorno de homologación, que debe estar ubicado en "
+            f"{WSDL_HOMOLOGACION}"
+        )
         sys.exit(1)
 
     # if len(sys.argv) < 2:
@@ -195,30 +192,31 @@ def main():
     ####################################################
     # Verifico si tengo un ticket de acceso vigente
     ####################################################
-    # Verifico si hay un archivo con ticket de acceso
-    # si existe, verifico que se encuentre vigente
+    # Verifico si hay un archivo con ticket de acceso y si se encuentra vigente
+    # si no fuera así, se regenera
     ####################################################
-    if os.path.exists(ARCHIVO_TICKET_DE_ACCESO_AFIP):
-        if verifico_vigencia_del_ticket(ARCHIVO_TICKET_DE_ACCESO_AFIP):
-            print(f"Ticket Vigente en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}: no se requiere regenerarlo")
-            sys.exit(1)
-        else:
-            print("Ticket Vencido")
+    if not os.path.exists(ARCHIVO_TICKET_DE_ACCESO_AFIP) or \
+        not verifico_vigencia_del_ticket(ARCHIVO_TICKET_DE_ACCESO_AFIP):
 
-    # en este punto, o no hay archivo con el ticket de acceso o se encuentra vencido
+        print("Ticket de acceso a la AFIP Vencido -> se regenera")
 
-    # Verifico si existe el tra.xml del día de hoy, si no existe lo genero
-    # para reutilizarlo ya que tiene una duración de un día entre generación y expiración
-    hoy_str = datetime.datetime.today().strftime("%Y-%m-%d")
-    tra_hoy = f"docs/{hoy_str}-tra.xml"
-    if not os.path.exists(tra_hoy):
-        obtener_o_crear_tra(SERVICIO, datetime.datetime.today(), tra_hoy)
+        ############################
+        # genero el ARCHIVO_TRA
+        ############################
+        crear_tra(SERVICIO, datetime.datetime.today(), ARCHIVO_TRA)
 
-    cms_signed_data = create_embeded_pkcs7_signature(tra_hoy, ARCHIVO_CERTIFICADO_X509, ARCHIVO_CERTIFICADO_CLAVEPRIVADA)
-    request = base64.b64encode(cms_signed_data).decode()
+        cms_signed_data = create_embeded_pkcs7_signature(
+            ARCHIVO_TRA,
+            ARCHIVO_CERTIFICADO_X509,
+            ARCHIVO_CERTIFICADO_CLAVEPRIVADA
+        )
 
-    ticket_de_acceso = call_wsaa(request)
-    print(ticket_de_acceso)
+        request = base64.b64encode(cms_signed_data).decode()
+
+        call_wsaa(request)
+
+    # en este punto ya tenemos el ticket de acceso a la afip
+    # en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
 
 
 if __name__ == "__main__":

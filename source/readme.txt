@@ -54,10 +54,8 @@ openssl req -new -key certificado_csr.pk -subj "/C=AR/O=PJN_CNAT/CN=AFIP_Consult
 
 esto generó un archivo
 
-
-
 Web Service padron a4: "ws_sr_padron_a4": "https://awshomo.afip.gov.ar/sr-padron/webservices/personaServiceA4?WSDL",
 
 
- datos testing:
- https://www.afip.gob.ar/ws/ws_sr_padron_a4/datos-prueba-padron-a4.txt
+Datos testing:
+https://www.afip.gob.ar/ws/ws_sr_padron_a4/datos-prueba-padron-a4.txt

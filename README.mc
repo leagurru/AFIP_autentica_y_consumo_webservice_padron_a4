@@ -9,3 +9,11 @@ Instalación de requerimientos: pip install -r requirements.txt
 Documentación AFIP:
 WSAA (Webservice de Autenticación y Autorización)
 url: https://www.afip.gob.ar/ws/documentacion/wsaa.asp
+
+WSASS: certificado
+https://wsass-homo.afip.gob.ar/wsass/portal/main.aspx
+
+CÓMO GENERAR UNA SOLICITUD DE CERTIFICADO (CSR):
+https://www.afip.gob.ar/ws/WSASS/html/generarcsr.html
+
+
