@@ -14,7 +14,9 @@ import sys
 import time
 import base64
 import xml.etree.ElementTree as ET
+import configparser
 
+from pathlib import Path
 from lxml import etree
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.serialization import Encoding
@@ -27,54 +29,25 @@ from zeep.transports import Transport
 from zeep.exceptions import Fault
 from requests import Session
 
-####################################################################################
-# Constantes: definición
-####################################################################################
-WSDL_HOMOLOGACION = "docs/wsaa_homologacion.wsdl"
-ARCHIVO_CERTIFICADO_X509 = "certificados/certificado_x509.pem"                # a definir en cada caso
-ARCHIVO_CERTIFICADO_CLAVEPRIVADA = "certificados/claveprivada.pk"             # a definir en cada caso
-PASSPHRASE = None  # Sin passphrase si la clave privada no está encriptada    # a definir en cada caso
-PROXY_HOST = "10.1.1.10"                                                      # a definir en cada caso
-PROXY_PORT = 51966                                                            # a definir en cada caso
-# URL_TESTING_LOGIN = "https://wsaahomo.afip.gov.ar/ws/services/LoginCms"     # incluido en wsaa.wsdl
-# URL_PRODUCCION_LOGIN = "https://wsaa.afip.gov.ar/ws/services/LoginCms"
-SERVICIO = "ws_sr_padron_a4"
-ARCHIVO_TRA = "docs/LoginTicketRequest.xml"
-ARCHIVO_XML_CMS = "docs/LoginTicketRequest.xml.cms"
-ARCHIVO_TICKET_DE_ACCESO_AFIP = "docs/TicketAFIP.xml"
-####################################################################################
 
-#########################################################################################################
-# Flujo Principal
-# A continuación se describen los pasos que se deberán seguir para solicitar un TA al WSAA.
-# Cada uno de los puntos es explicado detalladamente en los apartados siguientes.
-# 1. Generar el mensaje del TRA (LoginTicketRequest.xml)
-# 2. Generar un CMS que contenga el TRA, su firma electrónica y el certificado
-# X.509 (LoginTicketRequest.xml.cms)
-# 3. Codificar en Base64 el CMS (LoginTicketRequest.xml.cms.bse64)
-# 4. Invocar WSAA con el CMS y recibir LoginTicketResponse.xml
-# 5. Extraer y validar la información de autorización (TA).
-#########################################################################################################
-
-
-def call_wsaa(request):
+def call_wsaa(request, wsdl, proxy_host, proxy_port, archivo_ticket_de_acceso_afip):
 
     # Configurar el proxy
     session = Session()
     session.proxies = {
-        'http': f'http://{PROXY_HOST}:{PROXY_PORT}',
-        'https': f'http://{PROXY_HOST}:{PROXY_PORT}',
+        'http': f'http://{proxy_host}:{proxy_port}',
+        'https': f'http://{proxy_host}:{proxy_port}',
     }
 
     # Crear el cliente SOAP
-    client = Client(WSDL_HOMOLOGACION, transport=Transport(session=session))
+    client = Client(wsdl, transport=Transport(session=session))
 
     try:
         # Llamar al método loginCms del servicio
         result = client.service.loginCms(in0=request)
 
         # se genera el archivo con el ticket de acceso a la afip
-        with open(ARCHIVO_TICKET_DE_ACCESO_AFIP, "w") as response_file:
+        with open(archivo_ticket_de_acceso_afip, "w") as response_file:
             response_file.write(result)
 
         return result
@@ -161,6 +134,28 @@ def verifico_vigencia_del_ticket(xml_file_path):
 
 
 def main():
+    ####################################################################################
+    # Constantes: definición. Se obtienen del config.ini
+    ####################################################################################
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    config = configparser.RawConfigParser()
+    config.read(BASE_DIR / "config.ini")
+
+    INTRANET = config.getboolean('ENTORNO', 'INTRANET')
+    DESARROLLO = config.getboolean('ENTORNO', 'DESARROLLO')
+    TESTING = config.getboolean('ENTORNO', 'TESTING')
+
+    DEBUG = DESARROLLO
+
+    WSDL = config.get('HOMOLOGACION', 'WSDL')
+    ARCHIVO_CERTIFICADO_X509 = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_X509')
+    ARCHIVO_CERTIFICADO_CLAVEPRIVADA = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_CLAVEPRIVADA')
+    PASSPHRASE = config.get('HOMOLOGACION', 'PASSPHRASE')
+    PROXY_HOST = config.get('HOMOLOGACION', 'PROXY_HOST')
+    PROXY_PORT = config.getint('HOMOLOGACION', 'PROXY_PORT')
+    SERVICIO = config.get('HOMOLOGACION', 'SERVICIO')
+    ARCHIVO_TRA = config.get('HOMOLOGACION', 'ARCHIVO_TRA')
+    ARCHIVO_TICKET_DE_ACCESO_AFIP = config.get('HOMOLOGACION', 'ARCHIVO_TICKET_DE_ACCESO_AFIP')
 
     if not os.path.exists(ARCHIVO_CERTIFICADO_X509):
         print(
@@ -176,10 +171,10 @@ def main():
         )
         sys.exit(1)
 
-    if not os.path.exists(WSDL_HOMOLOGACION):
+    if not os.path.exists(WSDL):
         print(
-            f"No se pudo abrir del WSDL del entorno de homologación, que debe estar ubicado en "
-            f"{WSDL_HOMOLOGACION}"
+            f"No se pudo abrir del WSDL, que debe estar ubicado en "
+            f"{WSDL}"
         )
         sys.exit(1)
 
@@ -214,6 +209,9 @@ def main():
         request = base64.b64encode(cms_signed_data).decode()
 
         call_wsaa(request)
+    else:
+        print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
+
 
     # en este punto ya tenemos el ticket de acceso a la afip
     # en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP

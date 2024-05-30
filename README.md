@@ -10,8 +10,17 @@ Documentación AFIP:
 WSAA (Webservice de Autenticación y Autorización)
 url: https://www.afip.gob.ar/ws/documentacion/wsaa.asp
 
-WSASS: certificado
-https://wsass-homo.afip.gob.ar/wsass/portal/main.aspx
+Especificación Técnica del WebService de Autenticación y Autorización (WSAA): 
+http://www.afip.gob.ar/ws/WSAA/Especificacion_Tecnica_WSAA_1.2.2.pdf
+
+Manual del Usuario del WSASS: 
+http://www.afip.gob.ar/ws/WSASS/WSASS_manual.pdf
+Ejemplos open source de clientes del WSAA (PHP, Java, .NET, PowerShell
+
+Catálogo de web services:
+https://www.afip.gob.ar/ws/documentacion/catalogo.asp
+
+
 
 CÓMO GENERAR UNA SOLICITUD DE CERTIFICADO (CSR):
 https://www.afip.gob.ar/ws/WSASS/html/generarcsr.html
