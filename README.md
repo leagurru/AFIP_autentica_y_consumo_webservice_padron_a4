@@ -4,7 +4,9 @@ los webservices de la AFIP en modo homologación.
 Ejemplo de la consulta al padrón de contribuyentes (webservice: ws_sr_padron_a4)
 y obtención de la respuesta de AFIP a un CUIT, a partir de una lista de cuils cuits de prueba proporcionados por la AFIP
 
-Instalación de requerimientos: pip install -r requirements.txt
+Instalación de requerimientos: 
+pip install -r requirements.txt
+
 config.ini.dev -> config.ini
 
 config.ini: Se deben definir las constantes, especialmente el certificado y la clave privada y el cuil,
