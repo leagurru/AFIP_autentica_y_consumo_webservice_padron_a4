@@ -55,7 +55,7 @@ def call_wsaa(request, wsdl, proxy_host, proxy_port, archivo_ticket_de_acceso_af
         return result
 
     except Fault as fault:
-        print(f"SOAP Fault: {fault.code}\n{fault.message}\n")
+        print(f"SOAP Falla: {fault.code}\n{fault.message}\n")
         return None
 
 
@@ -223,7 +223,11 @@ def call_ws_sr_padron_a4(
         return result
 
     except Fault as fault:
-        print(f"SOAP Fault: {fault.code}\n{fault.message}\n")
+        print(f"--------------------------------------------")
+        print(f"SOAP Falla: {fault.code}")
+        print(f"Mensaje de error: {fault.message}")
+        print(f"id: {id_persona}")
+        print(f"--------------------------------------------")
         return None
 
 
@@ -367,9 +371,20 @@ def main():
 
     for id_persona in id_personas:
 
-        respuesta = call_ws_sr_padron_a4(id_persona, CUIT_REPRESENTADA, WSDL_PADRON_A4, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
+        respuesta = call_ws_sr_padron_a4(
+            id_persona,
+            CUIT_REPRESENTADA,
+            WSDL_PADRON_A4,
+            PROXY_HOST,
+            PROXY_PORT,
+            ARCHIVO_TICKET_DE_ACCESO_AFIP
+        )
+
         if respuesta is None:
-            print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
+            pass
+            # print(f"---------------------------------------------------------------------------")
+            # print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
+            # print(f"---------------------------------------------------------------------------")
         else:
 
             # se genera el archivo con la respuesta del padron_a
@@ -388,6 +403,7 @@ def main():
                 file.write(result_json)
 
             print(f"La respuesta de la AFIP del webservice del padron_a4 para el CUIT {id_persona} está en el archivo {archivo_respuesta_id_persona}")
+
 
 if __name__ == "__main__":
     main()
