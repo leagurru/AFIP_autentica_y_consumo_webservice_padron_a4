@@ -75,8 +75,7 @@ def crear_tra(servicio, hoy, tra):
     tree.write(tra, xml_declaration=True, encoding='UTF-8', pretty_print=True)
 
 
-def create_embeded_pkcs7_signature(tra_hoy: str, cert: bytes, key: bytes) -> bytes:
-    # def create_embeded_pkcs7_signature(data: bytes, cert: bytes, key: bytes) -> bytes:
+def create_embeded_pkcs7_signature(tra: str, cert: bytes, key: bytes) -> bytes:
     """Creates an embedded ("nodetached") PKCS7 signature.
 
     This is equivalent to the output of::
@@ -84,7 +83,7 @@ def create_embeded_pkcs7_signature(tra_hoy: str, cert: bytes, key: bytes) -> byt
         openssl smime -sign -signer cert -inkey key -outform DER -nodetach < data
     """
 
-    with open(tra_hoy, "r") as xml_login_file:
+    with open(tra, "r") as xml_login_file:
         xml_login_data = xml_login_file.read()
 
     # Convert the XML data to bytes using encode() method
@@ -97,7 +96,7 @@ def create_embeded_pkcs7_signature(tra_hoy: str, cert: bytes, key: bytes) -> byt
         pk_data = pk_file.read()
 
     try:
-        pkey = load_pem_private_key(pk_data, None)
+        pkey = load_pem_private_key(pk_data, None)  # mi pk está sin clave
         signcert = load_pem_x509_certificate(cert_data)
     except Exception as e:
         print(f"{e}")
@@ -133,6 +132,99 @@ def verifico_vigencia_del_ticket(xml_file_path):
         return False
 
 
+def obtener_token_sign(xml_file_path):
+    # Parse the XML file
+    tree = ET.parse(xml_file_path)
+    root = tree.getroot()
+
+    # Encontrar el elemento "token"
+    token_str = root.find('.//token').text
+
+    # Encontrar el elemento "sign"
+    sign_str = root.find('.//sign').text
+
+    return token_str, sign_str
+
+
+def crear_soap_envelope(
+        id_persona,
+        cuit_representada,
+        archivo_ticket_de_acceso_afip
+):
+
+    # obtengo token y sign del archivo_ticket_de_acceso_afip
+    token, sign = obtener_token_sign(archivo_ticket_de_acceso_afip)
+
+    # Crear el elemento raíz con los nombres de espacio
+    envelope = ET.Element('soapenv:Envelope', attrib={
+        'xmlns:soapenv': 'http://schemas.xmlsoap.org/soap/envelope/',
+        'xmlns:a4': 'http://a4.soap.ws.server.puc.sr/'
+    })
+
+    # Crear los elementos Header y Body
+    header = ET.SubElement(envelope, 'soapenv:Header')
+    body = ET.SubElement(envelope, 'soapenv:Body')
+
+    # Crear el elemento getPersona dentro del Body
+    get_persona = ET.SubElement(body, 'a4:getPersona')
+
+    # Añadir los elementos token, sign, cuitRepresentada e idPersona
+    token_element = ET.SubElement(get_persona, 'token')
+    token_element.text = token
+
+    sign_element = ET.SubElement(get_persona, 'sign')
+    sign_element.text = sign
+
+    cuit_representada_element = ET.SubElement(get_persona, 'cuitRepresentada')
+    cuit_representada_element.text = cuit_representada
+
+    id_persona_element = ET.SubElement(get_persona, 'idPersona')
+    id_persona_element.text = id_persona
+
+    # Convertir el árbol XML a una cadena
+    xml_str = ET.tostring(envelope, encoding='unicode', method='xml')
+
+    return xml_str
+
+
+def call_ws_sr_padron_a4(
+        id_persona,
+        cuit_representada,
+        wsdl_padron_a4,
+        proxy_host,
+        proxy_port,
+        archivo_ticket_de_acceso_afip
+):
+
+    # Configurar el proxy
+    session = Session()
+    session.proxies = {
+        'http': f'http://{proxy_host}:{proxy_port}',
+        'https': f'http://{proxy_host}:{proxy_port}',
+    }
+
+    # Crear el cliente SOAP
+    client = Client(wsdl_padron_a4, transport=Transport(session=session))
+
+    try:
+
+        # obtengo token y sign del archivo_ticket_de_acceso_afip
+        token, sign = obtener_token_sign(archivo_ticket_de_acceso_afip)
+
+        result = client.service.getPersona(
+            sign=sign,
+            token=token,
+            cuitRepresentada=cuit_representada,
+            idPersona=id_persona
+        )
+
+        return result
+
+    except Fault as fault:
+        print(f"SOAP Fault: {fault.code}\n{fault.message}\n")
+        return None
+
+
 def main():
     ####################################################################################
     # Constantes: definición. Se obtienen del config.ini
@@ -147,7 +239,8 @@ def main():
 
     DEBUG = DESARROLLO
 
-    WSDL = config.get('HOMOLOGACION', 'WSDL')
+    WSDL_WSAA = config.get('HOMOLOGACION', 'WSDL_WSAA')
+    WSDL_PADRON_A4 = config.get('HOMOLOGACION', 'WSDL_PADRON_A4')
     ARCHIVO_CERTIFICADO_X509 = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_X509')
     ARCHIVO_CERTIFICADO_CLAVEPRIVADA = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_CLAVEPRIVADA')
     PASSPHRASE = config.get('HOMOLOGACION', 'PASSPHRASE')
@@ -156,6 +249,7 @@ def main():
     SERVICIO = config.get('HOMOLOGACION', 'SERVICIO')
     ARCHIVO_TRA = config.get('HOMOLOGACION', 'ARCHIVO_TRA')
     ARCHIVO_TICKET_DE_ACCESO_AFIP = config.get('HOMOLOGACION', 'ARCHIVO_TICKET_DE_ACCESO_AFIP')
+    CUIT_REPRESENTADA = config.get('HOMOLOGACION', 'CUIT_REPRESENTADA')
 
     if not os.path.exists(ARCHIVO_CERTIFICADO_X509):
         print(
@@ -171,10 +265,10 @@ def main():
         )
         sys.exit(1)
 
-    if not os.path.exists(WSDL):
+    if not os.path.exists(WSDL_WSAA):
         print(
-            f"No se pudo abrir del WSDL, que debe estar ubicado en "
-            f"{WSDL}"
+            f"No se pudo abrir el WSDL_WSAA, que debe estar ubicado en "
+            f"{WSDL_WSAA}"
         )
         sys.exit(1)
 
@@ -208,11 +302,18 @@ def main():
 
         request = base64.b64encode(cms_signed_data).decode()
 
-        call_wsaa(request, WSDL, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
+        call_wsaa(request, WSDL_WSAA, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
     else:
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
     # en este punto ya tenemos el ticket de acceso a la AFIP en el archivo ARCHIVO_TICKET_DE_ACCESO_AFIP
+    id_persona = "30202020204"
+
+    respuesta = call_ws_sr_padron_a4(id_persona, CUIT_REPRESENTADA, WSDL_PADRON_A4, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
+    if respuesta is None:
+        print(f"No se obtuvo respuesta del padron_a4 para el CUIT {id_persona}")
+    else:
+        print(respuesta)
 
 
 if __name__ == "__main__":
