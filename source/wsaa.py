@@ -399,18 +399,20 @@ def main():
 
         if respuesta is not None:
 
-            # se genera el archivo con la respuesta del padron_a
-            # conversión de la respuesta a dictionary
-            # la respuesta vuelve con el tipo <class 'zeep.objects.personaReturn'>
+            # Generación del archivo con la respuesta del padron_a4
 
-            # Convertir el objeto zeep a un diccionario
+            # 1) Conversión de la respuesta a dictionary (la respuesta es del tipo <class 'zeep.objects.personaReturn')
+
+            # 2) Conversión del objeto zeep a un diccionario
             result_dict = serialize_object(respuesta)
 
-            # Convertir el diccionario a una cadena JSON
+            # 3) Conversión del diccionario a una cadena JSON
             result_json = json.dumps(result_dict, indent=4, default=str)
 
+            # 4) Armado del nombre del archivo
             archivo_respuesta_id_persona = f"{ARCHIVO_RESPUESTA_GETPERSONA}-cuit={id_persona}.json"
-            # Escribir la cadena JSON a un archivo
+
+            # 5) Escritura de la cadena JSON a un archivo
             with open(archivo_respuesta_id_persona, 'w') as file:
                 file.write(result_json)
 
