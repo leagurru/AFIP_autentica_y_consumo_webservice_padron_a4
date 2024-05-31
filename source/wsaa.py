@@ -80,7 +80,7 @@ def generar_ticket_de_acceso(
     :param proxy_host: proxy host proveniente del config.ini
     :param proxy_port: proxy port proveniente del config.ini
     :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
-    :return: booleano si estuvo todo ok
+    :return: booleano si el método termina ok
             puede devolver string si hubo una excepción
     """
     # try:
