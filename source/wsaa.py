@@ -31,7 +31,27 @@ from zeep.helpers import serialize_object
 from requests import Session
 
 
-def call_wsaa(request, wsdl, proxy, proxy_host, proxy_port, archivo_ticket_de_acceso_afip):
+def call_wsaa(
+        request,
+        wsdl,
+        proxy,
+        proxy_host,
+        proxy_port,
+        archivo_ticket_de_acceso_afip
+):
+
+    """
+    Generación del ticket de acceso al wsaa de la AFIP
+
+    :param request: request firmado y codificado base64
+    :param wsdl: wsdl en xml para el cliente soap
+    :param proxy: proxy en booleano, proveniente del config.ini
+    :param proxy_host: proxy host proveniente del config.ini
+    :param proxy_port: proxy port proveniente del config.ini
+    :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
+    :return:
+    """
+
 
     # Si el usuario definió un proxy en el config.ini se configura
     # Configurar el proxy
@@ -227,6 +247,7 @@ def call_ws_sr_padron_a4(
     :param id_persona: cuit/cuil de la persona a consultar
     :param cuit_representada: cuit representado, en este caso de homologación el cuil del desarrollador que obtuvo el certificado
     :param wsdl_padron_a4: url para la consulta {WSDL_PADRON_A4}
+    :param proxy: proxy en booleano, proveniente del config.ini
     :param proxy_host: proxy host proveniente del config.ini
     :param proxy_port: proxy port proveniente del config.ini
     :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
