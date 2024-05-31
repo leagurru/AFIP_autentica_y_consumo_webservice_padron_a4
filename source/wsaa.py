@@ -15,6 +15,7 @@ import time
 import base64
 import xml.etree.ElementTree as ET
 import configparser
+import traceback
 
 from pathlib import Path
 from lxml import etree
@@ -29,6 +30,36 @@ from zeep.transports import Transport
 from zeep.exceptions import Fault
 from zeep.helpers import serialize_object
 from requests import Session
+
+
+def mensaje_excepcion(e: Exception) -> str:
+    # Obtener el traceback completo
+    tb = traceback.format_exc()
+
+    exception_type = type(e).__name__
+
+    mensaje = ""
+    mensaje += f"#################################################################"
+    mensaje += '\n'
+    mensaje += f"EXCEPCION:"
+    mensaje += '\n'
+    mensaje += f"#################################################################"
+    mensaje += '\n'
+
+    mensaje += f"Ocurrió una excepción del tipo: {exception_type}"
+    mensaje += '\n'
+
+    mensaje += f"Mensaje de la excepción: {str(e)}"
+    mensaje += '\n'
+
+    mensaje += f"Traceback: "
+    mensaje += '\n'
+
+    mensaje += tb
+    mensaje += '\n'
+    mensaje += f"#################################################################"
+    mensaje += '\n'
+    return mensaje
 
 
 def call_wsaa(
@@ -80,28 +111,47 @@ def call_wsaa(
         return None
 
 
-def crear_tra(servicio, hoy, tra):
+def crear_tra(
+        servicio: str,
+        tra: str
+) -> bool:
     """
-    Creación de un archivo xml con el tra: ticket de requisitoria de acceso a AFIP
+    Creación de un archivo xml con el tra: ticket de requisitoria de acceso a webservices de AFIP
+    para el servicio indicado en el parámetro
+
+    :param servicio:  Servicio {SERVICIO}
+    :param tra:  archivo de Ticket Request Access. Path: {ARCHIVO_TRA}
+    :return: bool indicando si se pudo crear el archivo o hubo una excepción
+             puede devolver string si hubo una excepción
     """
+    try:
+        hoy = datetime.datetime.today()
+        hoy_iso = (hoy - datetime.timedelta(seconds=60)).isoformat()
+        maniana = hoy + + datetime.timedelta(days=1)
+        maniana_iso = (maniana - datetime.timedelta(seconds=60)).isoformat()
 
-    hoy_iso = (hoy - datetime.timedelta(seconds=60)).isoformat()
-    maniana = hoy + + datetime.timedelta(days=1)
-    maniana_iso = (maniana - datetime.timedelta(seconds=60)).isoformat()
+        root = etree.Element('loginTicketRequest', version='1.0')
+        header = etree.SubElement(root, 'header')
+        etree.SubElement(header, 'uniqueId').text = str(int(time.time()))
 
-    root = etree.Element('loginTicketRequest', version='1.0')
-    header = etree.SubElement(root, 'header')
-    etree.SubElement(header, 'uniqueId').text = str(int(time.time()))
+        etree.SubElement(header, 'generationTime').text = hoy_iso
+        etree.SubElement(header, 'expirationTime').text = maniana_iso
 
-    etree.SubElement(header, 'generationTime').text = hoy_iso
-    etree.SubElement(header, 'expirationTime').text = maniana_iso
+        etree.SubElement(root, 'service').text = servicio
+        tree = etree.ElementTree(root)
+        tree.write(tra, xml_declaration=True, encoding='UTF-8', pretty_print=True)
+    except Exception as e:
+        return mensaje_excepcion(e)
 
-    etree.SubElement(root, 'service').text = servicio
-    tree = etree.ElementTree(root)
-    tree.write(tra, xml_declaration=True, encoding='UTF-8', pretty_print=True)
+    return True
 
 
-def create_embeded_pkcs7_signature(tra: str, cert: bytes, key: bytes) -> bytes:
+def create_embeded_pkcs7_signature(
+        tra: str,
+        cert: str,
+        key: str,
+        passphrase: str,
+) -> bytes:
     """
     Creación de una firma PKCS7 embebida ("nodetached")
 
@@ -112,27 +162,44 @@ def create_embeded_pkcs7_signature(tra: str, cert: bytes, key: bytes) -> bytes:
     :param tra:  archivo de Ticket Request Access. Path: {ARCHIVO_TRA}
     :param cert: archivo con el Certificado X509.  Path: {ARCHIVO_CERTIFICADO_X509}
     :param key:  archivo con la Clave Privada.     Path: {ARCHIVO_CERTIFICADO_CLAVEPRIVADA}
+    :param passphrase: clave para acceder a la clave privada {PASSPHRASE}
     :return: tipo bytes
+             puede devolver string si hubo una excepción
+
     """
 
-    with open(tra, "r") as xml_login_file:
-        xml_login_data = xml_login_file.read()
-
-    # Convert the XML data to bytes using encode() method
-    xml_login_bytes_data = xml_login_data.encode('utf-8')
-
-    with open(cert, "rb") as cert_file:
-        cert_data = cert_file.read()
-
-    with open(key, "rb") as pk_file:
-        pk_data = pk_file.read()
+    # with open(tra, "r") as xml_login_file:
+    #     xml_login_data = xml_login_file.read()
+    #
+    # # Convert the XML data to bytes using encode() method
+    # xml_login_bytes_data = xml_login_data.encode('utf-8')
+    #
+    # with open(cert, "rb") as cert_file:
+    #     cert_data = cert_file.read()
+    #
+    # with open(key, "rb") as pk_file:
+    #     pk_data = pk_file.read()
 
     try:
-        pkey = load_pem_private_key(pk_data, None)  # mi pk está sin clave
+        with open(tra, "r") as xml_login_file:
+            xml_login_data = xml_login_file.read()
+
+        # Convert the XML data to bytes using encode() method
+        xml_login_bytes_data = xml_login_data.encode('utf-8')
+
+        with open(cert, "rb") as cert_file:
+            cert_data = cert_file.read()
+
+        with open(key, "rb") as pk_file:
+            pk_data = pk_file.read()
+        if passphrase == "":
+            pkey = load_pem_private_key(pk_data, None)  # {PASSPHRASE} vacía en config.ini, se firma sin clave
+        else:
+            pkey = load_pem_private_key(pk_data, passphrase)  # {PASSPHRASE} se firma con clave
+
         signcert = load_pem_x509_certificate(cert_data)
     except Exception as e:
-        print(f"{e}")
-        return None
+        return mensaje_excepcion(e)
 
     return (
         PKCS7SignatureBuilder()
@@ -352,15 +419,40 @@ def main():
         ############################
         # genero el ARCHIVO_TRA
         ############################
-        crear_tra(SERVICIO, datetime.datetime.today(), ARCHIVO_TRA)
+        respuesta_tra_creado = crear_tra(SERVICIO, ARCHIVO_TRA)
 
-        cms_signed_data = create_embeded_pkcs7_signature(
+        if not isinstance(respuesta_tra_creado, bool):
+            print(
+                f"###############################################################################"
+            )
+            print(
+                f"No se pudo crear el archivo xml de ticket de requerimiento de acceso a la AFIP"
+            )
+            print(
+                f"{respuesta_tra_creado}"
+            )
+            sys.exit(1)
+
+        respuesta_cms_signed_data = create_embeded_pkcs7_signature(
             ARCHIVO_TRA,
             ARCHIVO_CERTIFICADO_X509,
-            ARCHIVO_CERTIFICADO_CLAVEPRIVADA
+            ARCHIVO_CERTIFICADO_CLAVEPRIVADA,
+            PASSPHRASE
         )
 
-        request = base64.b64encode(cms_signed_data).decode()
+        if not isinstance(respuesta_cms_signed_data, bytes):  # el método create_embeded_pkcs7_signature tuvo una excepción
+            print(
+                f"###############################################################################"
+            )
+            print(
+                f"No se pudo firmar el ticket de requerimiento de acceso a la AFIP"
+            )
+            print(
+                f"{respuesta_cms_signed_data}"
+            )
+            sys.exit(1)
+
+        request = base64.b64encode(respuesta_cms_signed_data).decode()
 
         call_wsaa(
             request,

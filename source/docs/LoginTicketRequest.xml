@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <loginTicketRequest version="1.0">
   <header>
-    <uniqueId>1717065488</uniqueId>
-    <generationTime>2024-05-30T07:37:08.648991</generationTime>
-    <expirationTime>2024-05-31T07:37:08.648991</expirationTime>
+    <uniqueId>1717158060</uniqueId>
+    <generationTime>2024-05-31T09:20:00.959704</generationTime>
+    <expirationTime>2024-06-01T09:20:00.959704</expirationTime>
   </header>
   <service>ws_sr_padron_a4</service>
 </loginTicketRequest>
