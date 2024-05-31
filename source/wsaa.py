@@ -81,25 +81,8 @@ def generar_ticket_de_acceso(
     :param proxy_port: proxy port proveniente del config.ini
     :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
     :return: booleano si el método termina ok
-            puede devolver string si hubo una excepción
+             string si hubo una excepción
     """
-    # try:
-    #     session = Session()
-    #
-    #     # Si el usuario definió un proxy en el config.ini se configura
-    #     # Configurar el proxy
-    #     if proxy:
-    #         session.proxies = {
-    #             'http': f'http://{proxy_host}:{proxy_port}',
-    #             'https': f'http://{proxy_host}:{proxy_port}',
-    #         }
-    #
-    #     # Crear el cliente SOAP
-    #     client = Client(wsdl, transport=Transport(session=session))
-    #
-    # except Exception as e:
-    #     return mensaje_excepcion(e)
-
     try:
         session = Session()
 
@@ -143,7 +126,8 @@ def crear_tra(
     :param servicio:  Servicio {SERVICIO}
     :param tra:  archivo de Ticket Request Access. Path: {ARCHIVO_TRA}
     :return: bool indicando si se pudo crear el archivo o hubo una excepción
-             puede devolver string si hubo una excepción
+             string si hubo una excepción
+
     """
     try:
         hoy = datetime.datetime.today()
@@ -184,8 +168,8 @@ def create_embeded_pkcs7_signature(
     :param cert: archivo con el Certificado X509.  Path: {ARCHIVO_CERTIFICADO_X509}
     :param key:  archivo con la Clave Privada.     Path: {ARCHIVO_CERTIFICADO_CLAVEPRIVADA}
     :param passphrase: clave para acceder a la clave privada {PASSPHRASE}
-    :return: tipo bytes
-             puede devolver string si hubo una excepción
+    :return: bytes
+             string si hubo una excepción
 
     """
 
