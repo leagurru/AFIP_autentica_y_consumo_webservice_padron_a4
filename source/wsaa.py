@@ -31,15 +31,16 @@ from zeep.helpers import serialize_object
 from requests import Session
 
 
-def call_wsaa(request, wsdl, proxy_host, proxy_port, archivo_ticket_de_acceso_afip):
+def call_wsaa(request, wsdl, proxy, proxy_host, proxy_port, archivo_ticket_de_acceso_afip):
 
     # Si el usuario definió un proxy en el config.ini se configura
     # Configurar el proxy
     session = Session()
-    session.proxies = {
-        'http': f'http://{proxy_host}:{proxy_port}',
-        'https': f'http://{proxy_host}:{proxy_port}',
-    }
+    if proxy:
+        session.proxies = {
+            'http': f'http://{proxy_host}:{proxy_port}',
+            'https': f'http://{proxy_host}:{proxy_port}',
+        }
 
     # Crear el cliente SOAP
     client = Client(wsdl, transport=Transport(session=session))
@@ -214,6 +215,7 @@ def call_ws_sr_padron_a4(
         id_persona,
         cuit_representada,
         wsdl_padron_a4,
+        proxy,
         proxy_host,
         proxy_port,
         archivo_ticket_de_acceso_afip
@@ -233,10 +235,11 @@ def call_ws_sr_padron_a4(
 
     # Configurar el proxy
     session = Session()
-    session.proxies = {
-        'http': f'http://{proxy_host}:{proxy_port}',
-        'https': f'http://{proxy_host}:{proxy_port}',
-    }
+    if proxy:
+        session.proxies = {
+            'http': f'http://{proxy_host}:{proxy_port}',
+            'https': f'http://{proxy_host}:{proxy_port}',
+        }
 
     # Crear el cliente SOAP
     client = Client(wsdl_padron_a4, transport=Transport(session=session))
@@ -284,6 +287,7 @@ def main():
     ARCHIVO_CERTIFICADO_X509 = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_X509')
     ARCHIVO_CERTIFICADO_CLAVEPRIVADA = config.get('HOMOLOGACION', 'ARCHIVO_CERTIFICADO_CLAVEPRIVADA')
     PASSPHRASE = config.get('HOMOLOGACION', 'PASSPHRASE')
+    PROXY = config.get('HOMOLOGACION', 'PROXY')
     PROXY_HOST = config.get('HOMOLOGACION', 'PROXY_HOST')
     PROXY_PORT = config.getint('HOMOLOGACION', 'PROXY_PORT')
     SERVICIO = config.get('HOMOLOGACION', 'SERVICIO')
@@ -337,7 +341,14 @@ def main():
 
         request = base64.b64encode(cms_signed_data).decode()
 
-        call_wsaa(request, WSDL_WSAA, PROXY_HOST, PROXY_PORT, ARCHIVO_TICKET_DE_ACCESO_AFIP)
+        call_wsaa(
+            request,
+            WSDL_WSAA,
+            PROXY,
+            PROXY_HOST,
+            PROXY_PORT,
+            ARCHIVO_TICKET_DE_ACCESO_AFIP
+        )
     else:
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
@@ -392,6 +403,7 @@ def main():
             id_persona,
             CUIT_REPRESENTADA,
             WSDL_PADRON_A4,
+            PROXY,
             PROXY_HOST,
             PROXY_PORT,
             ARCHIVO_TICKET_DE_ACCESO_AFIP
