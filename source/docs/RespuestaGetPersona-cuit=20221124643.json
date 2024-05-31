@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "fechaHora": "2024-05-30 13:36:12.195000-03:00",
+        "fechaHora": "2024-05-31 11:01:09.341000-03:00",
         "servidor": "setiwsh2"
     },
     "persona": {
@@ -17,17 +17,17 @@
         "cantidadSociosEmpresaMono": null,
         "categoria": [
             {
-                "descripcionCategoria": "B VENTAS DE COSAS MUEBLES",
-                "estado": "ACTIVO",
-                "idCategoria": 44,
-                "idImpuesto": 20,
-                "periodo": 202402
-            },
-            {
                 "descripcionCategoria": "B VENTAS DE COSAS MUEBLES - ACTIVO",
                 "estado": "ACTIVO",
                 "idCategoria": 24,
                 "idImpuesto": 21,
+                "periodo": 202402
+            },
+            {
+                "descripcionCategoria": "B VENTAS DE COSAS MUEBLES",
+                "estado": "ACTIVO",
+                "idCategoria": 44,
+                "idImpuesto": 20,
                 "periodo": 202402
             }
         ],

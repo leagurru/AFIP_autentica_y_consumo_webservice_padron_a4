@@ -62,7 +62,7 @@ def mensaje_excepcion(e: Exception) -> str:
     return mensaje
 
 
-def call_wsaa(
+def generar_ticket_de_acceso(
         request,
         wsdl,
         proxy,
@@ -72,31 +72,48 @@ def call_wsaa(
 ):
 
     """
-    Generación del ticket de acceso al wsaa de la AFIP
+    Generación de un archivo XML con ticket de acceso al wsaa de la AFIP
 
-    :param request: request firmado y codificado base64
-    :param wsdl: wsdl en xml para el cliente soap
+    :param request: request cms firmado y codificado base64
+    :param wsdl: wsdl en xml para el cliente soap : path al archivo {WSDL_WSAA}
     :param proxy: proxy en booleano, proveniente del config.ini
     :param proxy_host: proxy host proveniente del config.ini
     :param proxy_port: proxy port proveniente del config.ini
     :param archivo_ticket_de_acceso_afip: path al archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}
-    :return:
+    :return: booleano si estuvo todo ok
+            puede devolver string si hubo una excepción
     """
-
-
-    # Si el usuario definió un proxy en el config.ini se configura
-    # Configurar el proxy
-    session = Session()
-    if proxy:
-        session.proxies = {
-            'http': f'http://{proxy_host}:{proxy_port}',
-            'https': f'http://{proxy_host}:{proxy_port}',
-        }
-
-    # Crear el cliente SOAP
-    client = Client(wsdl, transport=Transport(session=session))
+    # try:
+    #     session = Session()
+    #
+    #     # Si el usuario definió un proxy en el config.ini se configura
+    #     # Configurar el proxy
+    #     if proxy:
+    #         session.proxies = {
+    #             'http': f'http://{proxy_host}:{proxy_port}',
+    #             'https': f'http://{proxy_host}:{proxy_port}',
+    #         }
+    #
+    #     # Crear el cliente SOAP
+    #     client = Client(wsdl, transport=Transport(session=session))
+    #
+    # except Exception as e:
+    #     return mensaje_excepcion(e)
 
     try:
+        session = Session()
+
+        # Si el usuario definió un proxy en el config.ini se configura
+        # Configurar el proxy
+        if proxy:
+            session.proxies = {
+                'http': f'http://{proxy_host}:{proxy_port}',
+                'https': f'http://{proxy_host}:{proxy_port}',
+            }
+
+        # Crear el cliente SOAP
+        client = Client(wsdl, transport=Transport(session=session))
+
         # Llamar al método loginCms del servicio
         result = client.service.loginCms(in0=request)
 
@@ -104,11 +121,15 @@ def call_wsaa(
         with open(archivo_ticket_de_acceso_afip, "w") as response_file:
             response_file.write(result)
 
-        return result
+        # return result
+    except Exception as e:
+        return mensaje_excepcion(e)
 
-    except Fault as fault:
-        print(f"SOAP Falla: {fault.code}\n{fault.message}\n")
-        return None
+    return True
+
+    # except Fault as fault:
+    #     print(f"SOAP Falla: {fault.code}\n{fault.message}\n")
+    #     return None
 
 
 def crear_tra(
@@ -420,7 +441,6 @@ def main():
         # genero el ARCHIVO_TRA
         ############################
         respuesta_tra_creado = crear_tra(SERVICIO, ARCHIVO_TRA)
-
         if not isinstance(respuesta_tra_creado, bool):
             print(
                 f"###############################################################################"
@@ -439,7 +459,6 @@ def main():
             ARCHIVO_CERTIFICADO_CLAVEPRIVADA,
             PASSPHRASE
         )
-
         if not isinstance(respuesta_cms_signed_data, bytes):  # el método create_embeded_pkcs7_signature tuvo una excepción
             print(
                 f"###############################################################################"
@@ -454,7 +473,8 @@ def main():
 
         request = base64.b64encode(respuesta_cms_signed_data).decode()
 
-        call_wsaa(
+        # Generación del ticket de acceso
+        respuesta_generar_ticket_de_acceso = generar_ticket_de_acceso(
             request,
             WSDL_WSAA,
             PROXY,
@@ -462,6 +482,18 @@ def main():
             PROXY_PORT,
             ARCHIVO_TICKET_DE_ACCESO_AFIP
         )
+        if not isinstance(respuesta_generar_ticket_de_acceso, bool):  # el método generar_ticket_de_acceso tuvo una excepción
+            print(
+                f"###############################################################################"
+            )
+            print(
+                f"No se pudo generar el ticket de acceso a la AFIP"
+            )
+            print(
+                f"{respuesta_generar_ticket_de_acceso}"
+            )
+            sys.exit(1)
+
     else:
         print(f"El ticket de acceso a la AFIP está vigente, está en el archivo {ARCHIVO_TICKET_DE_ACCESO_AFIP}")
 
