@@ -30,4 +30,4 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
     - name: Run script
-      run: python wsaa.py    
+      run: python source/wsaa.py    
